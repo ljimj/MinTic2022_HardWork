@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "NsJA4rEBaKGo3lDgO3In2/OUHE4G3A9fMT7lHNj/Azd28ZmBpr24wcn6J3iaJVGSSRjbhw3z7dBHkO8WyA5QTQ==",
+  "success": true,
+  "projectFilePath": "C:\\salones\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LEO_J\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LEO_J\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

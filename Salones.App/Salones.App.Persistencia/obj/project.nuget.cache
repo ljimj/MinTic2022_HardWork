@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "eyYi2Ax30J5+Z5YfJXc9vPZXa7C4huM7sj6oTdYjgnecZG2yUWsjEpHC8TW/CLN7jvpuZA6FxRru8frBPYJhLg==",
+  "success": true,
+  "projectFilePath": "C:\\salones\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LEO_J\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LEO_J\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
