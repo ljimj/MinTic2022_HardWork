@@ -1,0 +1,10 @@
+
+Salones.App/Salones.App.Dominio/bin/Debug/netstandard2.0/Salones.App.Dominio.deps.json
+*.dll
+*.pdb
+*.cache
+Salones.App/Salones.App.Dominio/obj/project.assets.json
+Salones.App/Salones.App.Dominio/obj/project.nuget.cache
+Salones.App/Salones.App.Dominio/obj/Salones.App.Dominio.csproj.nuget.dgspec.json
+Salones.App/Salones.App.Dominio/obj/Salones.App.Dominio.csproj.nuget.g.props
+*.cache
