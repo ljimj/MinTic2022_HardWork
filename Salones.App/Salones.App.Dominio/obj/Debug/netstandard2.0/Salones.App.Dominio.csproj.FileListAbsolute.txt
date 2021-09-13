@@ -1,0 +1,9 @@
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.deps.json
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.dll
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.pdb
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csprojAssemblyReference.cache
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfo.cs
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.dll
+C:\Users\User\Documents\GitHub\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.pdb
