@@ -6,7 +6,7 @@ namespace Salones.App.Dominio
     {
         public string nombres{get;set;}
         public string apellidos{get;set;}
-        public indentificaion identificacion{get;set;}
+        public indentificacion identificacion{get;set;}
         public int edad{get;set;}
         public boolean estadoCOVID{get;set;}
         public int aislamiento{get;set;}

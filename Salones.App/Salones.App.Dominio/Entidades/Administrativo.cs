@@ -2,7 +2,7 @@ using System;
 
 namespace Salones.App.Dominio
 {
-    public class directivo:Persona
+    public class Administrativo:Persona
     {
         public string unidad{get;set;}
         
