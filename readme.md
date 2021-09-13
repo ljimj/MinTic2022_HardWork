@@ -1,6 +1,8 @@
-Equipo de trabajo HardWork
+##Equipo de trabajo HardWork##
 
-Roles e integrantes del Equipo
+Proyecto de práctica para curso de programación.
+
+##Roles e integrantes del Equipo##
 
 Nombre                              Rol dentro del equipo
 
