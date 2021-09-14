@@ -3,6 +3,7 @@ using System;
 
 namespace Salones.App.Dominio
 {
+    //Estado COVID de una persona
     public class Covid
     {
         public string sintomas{get;set;}
