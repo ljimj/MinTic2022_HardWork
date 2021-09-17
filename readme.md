@@ -1,6 +1,9 @@
 
 # Equipo de trabajo HardWork
 
+![Logo](https://user-images.githubusercontent.com/67766219/133719815-dd557309-256d-4ab0-a1ab-055134498cc6.png)
+
+
 Roles e integrantes del Equipo
 
 | Nombre                              | Rol dentro del equipo |
