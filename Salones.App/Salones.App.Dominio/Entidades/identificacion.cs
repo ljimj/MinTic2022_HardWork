@@ -1,7 +1,7 @@
-
 using System.Runtime.InteropServices.ComTypes;
 using System.Globalization;
 using System.Net.Http.Headers;
+
 namespace Salones.App.Dominio
 {
     //Enumera los posibles documentos de identificación
@@ -10,7 +10,7 @@ namespace Salones.App.Dominio
         C.C,
         Registro Civil,
         Targeta Identidad,
-        C.C Extrangera,
+        C.C Extranjera
     }
 }
 
