@@ -180,19 +180,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {}
+    "C:\\Users\\LEO_J\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
       "projectName": "Salones.App.Dominio",
-      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\obj\\",
+      "projectPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\LEO_J\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LEO_J\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
