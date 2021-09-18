@@ -3,12 +3,13 @@ using System;
 // Hereda la clase Persona
 namespace Salones.App.Dominio
 {
-    public class Administrativo:Persona
+    public class Directivo : Persona
     {
         public string unidad{get;set;}
-        public string oficina{get;set;}
-        public string dependencia{get;set;}
+        // Por definir 
+        //public string oficina{get;set;} 
+
+        //public string dependencia{get;set;}
          
-        
     }
 }

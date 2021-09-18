@@ -8,8 +8,11 @@ namespace Salones.App.Dominio
     public enum Facultad
     {
         Ingenierías,
+
         Medicina,
+
         Derecho,
+        
         Educacion
     }
 

@@ -8,6 +8,7 @@ namespace Salones.App.Dominio
     public enum programas
     {
         Ingeniería_Sistemas,
+        
         Medicina
     }
 
