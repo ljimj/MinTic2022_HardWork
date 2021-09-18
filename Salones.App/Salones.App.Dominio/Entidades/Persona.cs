@@ -19,7 +19,5 @@ namespace Salones.App.Dominio
 
         public Covid estadoCovid {get;set;}
 
-        public int aislamiento {get;set;}
-
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.Serialization;
 
 namespace Salones.App.Dominio
 
@@ -7,7 +8,7 @@ namespace Salones.App.Dominio
     {
         public int id {get;set;}         //Id del registro de ingreso
 
-        public DateTime FechaIngreso {get; set;}
+        public string FechaIngreso {get; set;}
 
         public Persona persona {get; set;}
 
