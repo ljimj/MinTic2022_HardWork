@@ -9,7 +9,7 @@ namespace Salones.App.Dominio
         public string apellidos{get;set;}
         public Identificacion identificacion{get;set;}
         public int edad{get;set;}
-        public boolean estadoCOVID{get;set;}
+        public bool estadoCOVID{get;set;}
         public int aislamiento{get;set;}
     }
 }

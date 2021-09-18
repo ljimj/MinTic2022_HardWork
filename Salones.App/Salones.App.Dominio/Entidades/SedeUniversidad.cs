@@ -2,7 +2,7 @@ using System;
 
 namespace Salones.App.Dominio
 {
-    public class Persona
+    public class Sede
     {
         public int cantidadSalones {get;set;}
         //Incluir arreglo de los salones de la sede
