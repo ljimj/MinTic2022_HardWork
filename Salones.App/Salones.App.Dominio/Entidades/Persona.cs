@@ -5,6 +5,7 @@ namespace Salones.App.Dominio
     // Esta clase es la base para listados de personas.
     public class Persona 
     {
+        public int id{get;set;};
         public string nombres{get;set;}
         public string apellidos{get;set;}
         public Identificacion identificacion{get;set;}

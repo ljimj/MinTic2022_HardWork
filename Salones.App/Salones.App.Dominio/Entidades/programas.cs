@@ -7,8 +7,8 @@ namespace Salones.App.Dominio
     //Enumera los posibles documentos de identificación
     public enum Identificacion
     {
-        'Ingeniería de Sistemas',
-    Medicina
+        Ingeniería_Sistemas,
+        Medicina
     }
 
     
