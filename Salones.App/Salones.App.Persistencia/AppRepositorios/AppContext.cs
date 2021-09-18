@@ -13,7 +13,15 @@ namespace Salones.App.Persistencia
 
         public DbSet<PersonalAseo> PersonasAseo {get;set;}
 
-        public DbSet<Profesor> Profesores {get;set;}
+        public DbSet<Profesor> Profesores {get;set;} 
+
+        public DbSet<Covid> DiagnosticosCovid {get;set;}
+
+        public DbSet<Sede> Sedes {get;set;}
+
+        public DbSet<Salon> Salones {get;set;}
+
+        public DbSet<Ingreso> IngresosSalon {get;set;}
 
          protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
