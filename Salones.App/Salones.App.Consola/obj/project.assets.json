@@ -5797,19 +5797,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\LEO_J\\.nuget\\packages\\": {}
+    "C:\\Users\\AUX ING\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\Salones.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\Salones.App.Consola.csproj",
       "projectName": "Salones.App.Consola",
-      "projectPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\Salones.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\LEO_J\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\Salones.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\AUX ING\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\LEO_J\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\AUX ING\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -5820,11 +5820,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj"
+            "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj"
             },
-            "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\LEO_J\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj"
+            "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj"
             }
           }
         }
