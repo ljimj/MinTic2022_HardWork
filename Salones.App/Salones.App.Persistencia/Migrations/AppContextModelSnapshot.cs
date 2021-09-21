@@ -91,7 +91,7 @@ namespace Salones.App.Persistencia.Migrations
                     b.Property<int?>("estadoCovidid")
                         .HasColumnType("int");
 
-                    b.Property<string>("identificacion")
+                    b.Property<string>("identificación")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("nombres")

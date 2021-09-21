@@ -10,15 +10,3 @@ C:\Users\LEO_J\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Pers
 C:\Users\LEO_J\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CopyComplete
 C:\Users\LEO_J\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.dll
 C:\Users\LEO_J\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.deps.json
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.dll
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.pdb
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.dll
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.pdb
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csprojAssemblyReference.cache
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfoInputs.cache
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfo.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CoreCompileInputs.cache
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CopyComplete
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.dll
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb

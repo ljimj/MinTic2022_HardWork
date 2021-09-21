@@ -13,7 +13,7 @@ namespace Salones.App.Dominio
 
         public TipoIdentificacion tipoIdentificacion {get;set;}
 
-        public string identificacion {get;set;}
+        public string identificación {get;set;}
 
         public int edad {get;set;}
 
