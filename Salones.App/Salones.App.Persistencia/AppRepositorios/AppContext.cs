@@ -28,6 +28,8 @@ namespace Salones.App.Persistencia
             if(!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer("Data Source =(localdb)\\MSSQLLocalDB; Initial Catalog = SalonesDataHW");
+                //Conexion en la máquina de Marco
+                //optionsBuilder.UseSqlServer("Data Source =localhost; Initial Catalog = SalonesDataHW;trusted_connection=true;");
             }
         }
 
