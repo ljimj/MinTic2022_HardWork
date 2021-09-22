@@ -12,7 +12,7 @@ namespace Salones.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddDirectivo();  //Por si se desea ejecutar
+            AddDirectivo();  //Por si se desea ejecutar
             //BuscarDirectivo(1); //Por si se desea ejecutar
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //EliminarDirectivo(1); //Por si se desea ejecutar
@@ -26,7 +26,7 @@ namespace Salones.App.Consola
                 nombres = "Carlos Mario",
                 apellidos = "Aponte Guerra",
                 tipoIdentificacion = TipoIdentificacion.CC,
-                identificación = "79678543",
+                identificacion = "79678543",
                 edad = 47,
                 estadoCovid = null,
                 unidad = "304",
@@ -41,7 +41,7 @@ namespace Salones.App.Consola
         private static void BuscarDirectivo(int idDirectivo)
         {
             var directivo = _repoDirectivo.GetDirectivo(idDirectivo);
-            Console.WriteLine(directivo.nombres+" "+directivo.apellidos+"\n-Unidad: "+directivo.unidad+"\n-Identificación: "+directivo.identificación);
+            Console.WriteLine(directivo.nombres+" "+directivo.apellidos+"\n-Unidad: "+directivo.unidad+"\n-Identificación: "+directivo.identificacion);
         }
         //DeleteDirectivo
         private static void EliminarDirectivo(int idDirectivo)
@@ -57,7 +57,7 @@ namespace Salones.App.Consola
                nombres = "Carlos Mario",
                apellidos = "Aponte Guerra",
                tipoIdentificacion = TipoIdentificacion.CC,
-               identificación = "86789543",
+               identificacion = "86789543",
                edad = 53,
                estadoCovid = null,
                unidad = "507",

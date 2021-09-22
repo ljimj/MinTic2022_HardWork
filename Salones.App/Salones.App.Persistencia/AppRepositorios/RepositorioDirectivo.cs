@@ -32,7 +32,7 @@ namespace Salones.App.Persistencia
                 directivoEncontrado.nombres = directivo.nombres;
                 directivoEncontrado.apellidos = directivo.apellidos;
                 directivoEncontrado.tipoIdentificacion = directivo.tipoIdentificacion;
-                directivoEncontrado.identificación = directivo.identificación;
+                directivoEncontrado.identificacion = directivo.identificacion;
                 directivoEncontrado.edad = directivo.edad;
                 directivoEncontrado.estadoCovid = directivo.estadoCovid;
                 directivoEncontrado.unidad = directivo.unidad;
