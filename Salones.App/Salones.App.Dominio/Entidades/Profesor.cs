@@ -1,5 +1,5 @@
 using System;
-
+// entidad profesor 
 namespace Salones.App.Dominio
 {
     // Clase para representar profesores
