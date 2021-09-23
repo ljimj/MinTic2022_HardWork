@@ -12,7 +12,7 @@ namespace Salones.App.Dominio
         
         public string sintomas{get;set;}
 
-        public EstadoCovid estadoCovid {get;set;} //este no seria bool
+        public bool estadoCovid {get;set;} 
         
         public string fechaDiagnostico{get;set;}
 
