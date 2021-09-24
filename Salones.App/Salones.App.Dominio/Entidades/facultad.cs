@@ -7,7 +7,7 @@ namespace Salones.App.Dominio
     //Enumera las facultades de la universidad
     public enum Facultad
     {
-        Ingenierías,
+        Ingenierias,
 
         Medicina,
 

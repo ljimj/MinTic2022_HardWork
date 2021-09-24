@@ -12,10 +12,10 @@ namespace Salones.App.Dominio
         
         public string sintomas{get;set;}
 
-        public bool estadoCovid {get;set;} 
+        public EstadoCovid estadoCovid {get;set;} 
         
         public string fechaDiagnostico{get;set;}
 
-        public string periodoAislamiento {get;set;}
+        public int periodoAislamiento {get;set;} //cantidad de dias
     }
 }

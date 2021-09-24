@@ -44,7 +44,7 @@ namespace Salones.App.Persistencia.Migrations
                     nombres = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     tipoIdentificacion = table.Column<int>(type: "int", nullable: false),
-                    identificación = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    identificacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     edad = table.Column<int>(type: "int", nullable: false),
                     estadoCovidid = table.Column<int>(type: "int", nullable: true),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
