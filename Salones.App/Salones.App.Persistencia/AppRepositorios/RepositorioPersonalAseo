@@ -30,9 +30,8 @@ namespace Salones.App.Persistencia
             if (personalAseoEncontrado != null)
             {
                 personalAseoEncontrado.id = personalAseo.id;
-                personalAseoEncontrado.capacidad = personalAseo.capacidad;
-                personalAseoEncontrado.disponibilidad = personalAseo.disponibilidad;
-                
+                personalAseoEncontrado.turno = personalAseo.capacidad;
+
                 _appContext.SaveChanges();
             }
             return personalAseoEncontrado;
