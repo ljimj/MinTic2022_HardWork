@@ -1,0 +1,27 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Ingresos";
+}
+
+
+<p>Aca van los formularios para registrar ingresos de personas
+</p>
+
+<form>
+    <label for="documento">Documento:</label>
+    <input type="text" id="documento" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname"><br><br>
+
+    <select name="cars" id="cars">
+        <option value="Estudiante">Estudiante</option>
+        <option value="Profesor">Profesor</option>
+        <option value="Administrativo">Administrativo</option>
+        <option value="Aseo">Personal de Aseo</option>
+    </select>
+
+    <input type="submit" value="Registrar">
+    <input type="cancel" value="Cancelar">
+
+</form>
