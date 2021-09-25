@@ -14,3 +14,16 @@ Salones.App/Salones.App.Dominio/obj/Salones.App.Dominio.csproj.nuget.g.props
 Modelo.~ml
 Salones.App/Salones.App.Dominio/obj/project.nuget.cache
 Salones.App/Salones.App.Dominio/obj/project.nuget.cache
+Salones.App/Salones.App.Persistencia/obj/Salones.App.Persistencia.csproj.nuget.g.props
+Salones.App/Salones.App.Dominio/obj/project.assets.json
+*.cache
+Salones.App/Salones.App.Dominio/obj/Salones.App.Dominio.csproj.nuget.dgspec.json
+*.props
+*.props
+*.cache
+*.json
+Salones.App/Salones.App.Persistencia/obj/Debug/netstandard2.1/Salones.App.Persistencia.csproj.FileListAbsolute.txt
+Salones.App/Salones.App.Persistencia/obj/project.assets.json
+Salones.App/Salones.App.Persistencia/obj/project.nuget.cache
+Salones.App/Salones.App.Persistencia/obj/Salones.App.Persistencia.csproj.nuget.dgspec.json
+Salones.App/Salones.App.Persistencia/obj/Salones.App.Persistencia.csproj.nuget.g.props
