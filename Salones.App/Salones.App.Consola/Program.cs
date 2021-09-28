@@ -16,9 +16,9 @@ namespace Salones.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddDirectivo();  //Por si se desea ejecutar
-            //AddProfesor();
-            //AddEstudiante();
+            AddDirectivo();  //Por si se desea ejecutar
+            AddProfesor();
+            AddEstudiante();
             
             //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
