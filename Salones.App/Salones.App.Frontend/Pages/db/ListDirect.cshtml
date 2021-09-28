@@ -8,12 +8,25 @@ Listado de directivos
 ¿Yo lo habia cambiado a administrativos?
 Pero creo que cuando se devolvieron algunos commit, ese cambio se perdió
 
-<table>  
-            @foreach (var direc in ListDirect.getAll())
-            {
+<table border="2px">
+    <tr> <strong>
+            <td>id </td>
+            <td>nombre </td>
+            <td>apellidos </td>
+        </strong>
 
-                <td>entro tabla @direc.nombres </td>
-                
-            }
-            
+    </tr>
+
+    @foreach (var direc in ListDirect.getAll())
+    {
+        <tr>
+            <td> @direc.id </td>
+
+            <td> @direc.nombres </td>
+            <td> @direc.apellidos </td>
+            <td> ver detalles</td>
+        </tr>
+
+    }
+
 </table>
