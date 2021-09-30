@@ -34,3 +34,15 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandar
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CopyComplete
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.deps.json
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.dll
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.pdb
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.dll
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.pdb
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csprojAssemblyReference.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfoInputs.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfo.cs
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CoreCompileInputs.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CopyComplete
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.dll
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb

@@ -34,3 +34,12 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.CoreCompileInputs.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.pdb
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.deps.json
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.dll
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.pdb
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csprojAssemblyReference.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfoInputs.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfo.cs
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.CoreCompileInputs.cache
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.dll
+C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.pdb
