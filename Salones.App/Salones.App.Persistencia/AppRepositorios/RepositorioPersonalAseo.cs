@@ -30,7 +30,7 @@ namespace Salones.App.Persistencia
             if (personalAseoEncontrado != null)
             {
                 personalAseoEncontrado.id = personalAseo.id;
-                personalAseoEncontrado.turno = personalAseo.capacidad;
+                personalAseoEncontrado.turno = personalAseo.turno;
 
                 _appContext.SaveChanges();
             }
@@ -53,7 +53,7 @@ namespace Salones.App.Persistencia
             return PersonalAseoEncontrado;
         }
 
-        IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonalAseoes()
+        IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonasAseo()
         {
             return _appContext.PersonasAseo;
         }

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using PersonalAseoes.App.Dominio;
+using Salones.App.Dominio;
 
-namespace PersonalAseoes.App.Persistencia
+namespace Salones.App.Persistencia
 {
     public interface IRepositorioPersonalAseo
     {
