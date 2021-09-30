@@ -1,38 +1,38 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Aplicacion Para Control de Ingreso a Salones</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="~/css/Styles.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light, navbar navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">Administrar Cuarentena</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Inicio</a>
+                <a class="navbar-brand" href="#">
+                    <img src="/Nombre_logo.svg" width="291" height="60" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto, fontnavbar">
+                        <li class="nav-item active col-md-2">
+                            <a class="nav-link" asp-page="/Index">Inicio <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Listas">Listas</a>
+                        <li class="nav-item col-md-2">
+                            <a class="nav-link" asp-page="/Listas">Listas</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Ingresos">Ingresos</a>
+                        <li class="nav-item col-md-3">
+                            <a class="nav-link" asp-page="/Ingresos">Ingresos</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacidad</a>
+                        <li class="nav-item col-md-3">
+                            <a class="nav-link" asp-page="/Privacy">Privacidad</a>
                         </li>
                     </ul>
                 </div>
             </div>
+
         </nav>
     </header>
     <div class="container">
@@ -40,13 +40,89 @@
             @RenderBody()
         </main>
     </div>
+    <footer class="page-footer font-small purple pt-4 fixed-bottom bg-blue">
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2021 - Equipo HardWork - <a asp-area="" asp-page="/Privacy">Privacy</a> - 
-            <a href="https://github.com/ljimj/MinTic2022_HardWork">Ver Repositorio</a>
+        <!-- Footer Links -->
+        <!--<div class="container text-center text-md-left">-->
+
+            <!-- Grid row -->
+            <!--<div class="row">-->
+
+                <!-- Grid column -->
+                <!--<div class="col-md-6 mt-md-0 mt-3">-->
+
+                    <!-- Content -->
+                    <!--<h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>-->
+                <!-- Grid column -->
+
+                <!--<hr class="clearfix w-100 d-md-none pb-3">-->
+
+                <!-- Grid column -->
+                <!--<div class="col-md-3 mb-md-0 mb-3">-->
+
+                    <!-- Links -->
+                    <!--<h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+
+                    </ul>
+
+                </div>-->
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <!--<div class="col-md-3 mb-md-0 mb-3">-->
+
+                    <!-- Links -->
+                    <!--<h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+
+                    </ul>
+
+                </div>-->
+                <!-- Grid column -->
+
+            <!--</div>-->
+            <!-- Grid row -->
+
+        <!--</div>-->
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3" style=" background-color: #EDF0DA;">
+            © 2021 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> - Equipo HardWork</a>
         </div>
+        <!-- Copyright -->
+
     </footer>
+
+    @*<footer class="footer">
+        <div class="container">
+            <span class="text-muted">Place sticky footer content here.</span>
+        </div>
+    </footer>*@
+
+    @*<footer class="border-top footer text-muted">
+            <div class="container">
+                &copy; 2021 - Equipo HardWork - <a asp-area="" asp-page="/Privacy">Privacy</a> -
+                <a href="https://github.com/ljimj/MinTic2022_HardWork">Ver Repositorio</a>
+            </div>
+        </footer>*@
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
