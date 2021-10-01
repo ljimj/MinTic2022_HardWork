@@ -5,21 +5,33 @@
 }
 
 
-<p>Aca van los formularios para registrar ingresos de personas
+<p>Aca van el formulario para registrar ingresos de personas a los salones
 </p>
 
 <form>
     <label for="documento">Documento:</label>
     <input type="text" id="documento" name="fname"><br><br>
-    <label for="lname">Last name:</label>
-    <input type="text" id="lname" name="lname"><br><br>
 
-    <select name="cars" id="cars">
+    <select name="TipoPersona" id="TipoPersona">
         <option value="Estudiante">Estudiante</option>
         <option value="Profesor">Profesor</option>
         <option value="Administrativo">Administrativo</option>
         <option value="Aseo">Personal de Aseo</option>
     </select>
+
+    Salon al cual se dirige:
+
+    <select name="Sede" id="Sede">
+        <option value="Sede1">Sede 1</option>
+        <option value="Sede2">Sede 3</option>
+        <option value="Sede3">Sede 4</option>
+        <option value="Sede4">Sede 5</option>
+    </select>
+
+    <label for="SalonIngreso">Salon:</label>
+    <input type="text" id="SalonIngreso" name="SalonIngreso"><br><br>
+
+
 
     <input type="submit" value="Registrar">
     <input type="cancel" value="Cancelar">
