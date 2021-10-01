@@ -9,31 +9,85 @@
 </p>
 
 <form>
-    <label for="documento">Documento:</label>
-    <input type="text" id="documento" name="fname"><br><br>
+    <div class="text-center">
+        <h1 class="">Ingreso de informacion para registro</h1>
+        <p>Aca van los formularios para registrar ingresos de personas</p>
+    </div>
+    <br />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                </div>
 
-    <select name="TipoPersona" id="TipoPersona">
-        <option value="Estudiante">Estudiante</option>
-        <option value="Profesor">Profesor</option>
-        <option value="Administrativo">Administrativo</option>
-        <option value="Aseo">Personal de Aseo</option>
-    </select>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                </div>
 
-    Salon al cual se dirige:
+                <div class="form-group col-md-5">
+                    <label for="inputState">Tipo de documento</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>Registro civil de nacimiento</option>
+                        <option>Tarjeta de identidad</option>
+                        <option>Cédula de ciudadanía</option>
+                        <option>Tarjeta de extranjería</option>
+                        <option>Cédula de extranjería </option>
+                        <option>Pasaporte</option>
+                    </select>
+                </div>
 
-    <select name="Sede" id="Sede">
-        <option value="Sede1">Sede 1</option>
-        <option value="Sede2">Sede 3</option>
-        <option value="Sede3">Sede 4</option>
-        <option value="Sede4">Sede 5</option>
-    </select>
+                <div class="col-md-5">
+                    <div class="form-group">
+                        <label for="documento">Documento</label>
+                        <input type="text" class="form-control" name="fname">
+                    </div>
+                </div>
 
-    <label for="SalonIngreso">Salon:</label>
-    <input type="text" id="SalonIngreso" name="SalonIngreso"><br><br>
+                <div class="col-md-2">
+                    <div class="form-group">
+                        <label for="exampleInputIdentificación">Edad</label>
+                        <input type="text" class="form-control" placeholder="Edad">
+                    </div>
+                </div>
 
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="inputState">Usuario</label>
+                        <select id="inputState" class="form-control">
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Profesor">Profesor</option>
+                            <option value="Administrativo">Administrativo</option>
+                            <option value="Aseo">Personal de Aseo</option>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                </div>
 
-    <input type="submit" value="Registrar">
-    <input type="cancel" value="Cancelar">
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+            <button type="submit" class="btn btn-warning">Cancelar</button>
+        </div>
+        <div class="col-md-6">
+            <div class="hero-image">
+            </div>
+        </div>
+    </div>
+
 
 </form>
+
+
+
+
