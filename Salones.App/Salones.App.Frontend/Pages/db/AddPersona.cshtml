@@ -1,0 +1,106 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "AgregarPersona";
+}
+
+Este es un modelo de como vamos a agregar nuevas personas. Por ahora es un experimento.
+La idea es que el formulario pida los datos de la clase persona, según el tipo persona, aparecen al final los campos
+adicionales
+
+<!-- public class Persona
+          public int id {get;set;}
+          public string nombres {get;set;}
+          public string apellidos {get;set;}
+          public TipoIdentificacion tipoIdentificacion {get;set;}
+          public string identificacion {get;set;}
+          public int edad {get;set;}
+          public Covid estadoCovid {get;set;} -->
+
+<!--
+    Como hacemos para que los elementos del formulario queden bien alineados
+    ¿Los metemos en una tabla con una columna de etiquetas y otra de input
+    O isabel hace su magia?
+-->
+<h1>Formulario para introducir nuevas personas</h1>
+<form>
+<label for="id"                 > id                </label>  <input id="id" >		     	     <br>
+<label for="nombres"            > nombres           </label>  <input id="nombres" >			     <br>
+<label for="apellidos"          > apellidos         </label>  <input id="apellidos" >		     <br>
+<label for="tipoIdentificacion" > tipoIdentificacion</label>  <input id="tipoIdentificacion">     <br>
+<label for="identificacion"     > identificacion    </label>  <input id="identificacion" >	     <br>
+<label for="edad"               > edad              </label>  <input id="edad" >				     <br>
+<label for="estadoCovid"        > estadoCovid       </label>  <input id="estadoCovid" >		     <br>
+
+    <select id="SelTipoPersona" class="form-control" onchange="CambiarTipoPersona">
+        <option value="1">Estudiante</option>
+        <option value="2">Profesor</option>
+        <option value="3">Administrativo</option>
+        <option value="4">Personal de Aseo</option>
+    </select><br>
+
+<script>
+    document.getElementById("SelTipoPersona").onchange = function() {CambiarTipoPersona()};
+
+    function CambiarTipoPersona()
+    {
+        var Tipo = document.getElementById("SelTipoPersona");
+        if (Tipo.value == 1){
+            document.getElementById("FSEstudiantes").setAttribute("hidden", "false");
+            document.getElementById("FSProfes").setAttribute("hidden", "True");
+            document.getElementById("FSAseo").setAttribute("hidden", "True");
+        }
+        if (Tipo.value == "2"){
+            document.getElementById("FSEstudiantes").setAttribute("hidden", "True");
+            document.getElementById("FSProfes").setAttribute("hidden", "false");
+            document.getElementById("FSAseo").setAttribute("hidden", "True");
+        }
+        if (Tipo.value == "3"){
+            document.getElementById("FSEstudiantes").setAttribute("hidden", "True");
+            document.getElementById("FSProfes").setAttribute("hidden", "True");
+            document.getElementById("FSAseo").setAttribute("hidden", "False");
+        }
+    }
+
+
+</script>
+
+
+
+<!-- Se supone que estos campos se hacen visibles o invisibles según el valor del selector inputState -->
+<!-- https://www.w3schools.com/tags/att_disabled.asp 
+https://www.w3schools.com/jsref/event_onselect.asp  -->
+
+<!-- Estudiantes -->
+<fieldset name="FSEstudiantes">
+    <legend>Estudiantes</legend>
+<label for="carrera"  > carrera  </label>  <input id="carrera" >		<br>
+<label for="semestre" > semestre </label>  <input id="semestre" >	<br>
+<label for="facultad" > facultad </label>  <input id="facultad" >	<br>
+</fieldset>
+
+<!-- Profesores -->
+<fieldset name="FSProfes" hidden=True>
+    <legend>Estudiantes</legend>
+<label for="departamento"> Departamento  </label>  <input id="departamento" >		<br>
+<label for="materia"     > materia  </label>  <input id="materia" >	<br>
+<label for="facultad"    > facultad </label>  <input id="facultad" >	<br>
+</fieldset>
+
+<!-- Directivos -->
+<fieldset name="FSProfes" hidden=True>
+    <legend>Estudiantes</legend>
+<label for="departamento"> Departamento  </label>  <input id="departamento" >		<br>
+<label for="materia"     > materia  </label>  <input id="materia" >	<br>
+<label for="facultad"    > facultad </label>  <input id="facultad" >	<br>
+</fieldset>
+
+<!-- Personal Aseo -->
+<fieldset name="FSAseo" hidden=True>
+    <legend>Personal de Aseo</legend>
+<label for="turno"> Turno  </label>  <input id="turno" >		<br>
+</fieldset>
+
+
+
+</form>
