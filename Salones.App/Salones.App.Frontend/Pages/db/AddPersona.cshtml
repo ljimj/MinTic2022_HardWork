@@ -23,7 +23,7 @@ adicionales
     O isabel hace su magia?
 -->
 <h1>Formulario para introducir nuevas personas</h1>
-<form>
+<form name="FormAddPersona">
 <label for="id"                 > id                </label>  <input id="id" >		     	     <br>
 <label for="nombres"            > nombres           </label>  <input id="nombres" >			     <br>
 <label for="apellidos"          > apellidos         </label>  <input id="apellidos" >		     <br>
@@ -33,37 +33,14 @@ adicionales
 <label for="estadoCovid"        > estadoCovid       </label>  <input id="estadoCovid" >		     <br>
 
     <select id="SelTipoPersona" class="form-control" onchange="CambiarTipoPersona">
-        <option value="1">Estudiante</option>
-        <option value="2">Profesor</option>
-        <option value="3">Administrativo</option>
-        <option value="4">Personal de Aseo</option>
+        <option value=0>Seleccione una opción</option>
+        <option value=1>Estudiante</option>
+        <option value=2>Profesor</option>
+        <option value=3>Administrativo</option>
+        <option value=4>Personal de Aseo</option>
     </select><br>
 
-<script>
-    document.getElementById("SelTipoPersona").onchange = function() {CambiarTipoPersona()};
 
-    function CambiarTipoPersona()
-    {
-        var Tipo = document.getElementById("SelTipoPersona");
-        if (Tipo.value == 1){
-            document.getElementById("FSEstudiantes").setAttribute("hidden", "false");
-            document.getElementById("FSProfes").setAttribute("hidden", "True");
-            document.getElementById("FSAseo").setAttribute("hidden", "True");
-        }
-        if (Tipo.value == "2"){
-            document.getElementById("FSEstudiantes").setAttribute("hidden", "True");
-            document.getElementById("FSProfes").setAttribute("hidden", "false");
-            document.getElementById("FSAseo").setAttribute("hidden", "True");
-        }
-        if (Tipo.value == "3"){
-            document.getElementById("FSEstudiantes").setAttribute("hidden", "True");
-            document.getElementById("FSProfes").setAttribute("hidden", "True");
-            document.getElementById("FSAseo").setAttribute("hidden", "False");
-        }
-    }
-
-
-</script>
 
 
 
@@ -72,7 +49,7 @@ adicionales
 https://www.w3schools.com/jsref/event_onselect.asp  -->
 
 <!-- Estudiantes -->
-<fieldset name="FSEstudiantes">
+<fieldset id="FSEstudiantes" hidden = true>
     <legend>Estudiantes</legend>
 <label for="carrera"  > carrera  </label>  <input id="carrera" >		<br>
 <label for="semestre" > semestre </label>  <input id="semestre" >	<br>
@@ -80,27 +57,68 @@ https://www.w3schools.com/jsref/event_onselect.asp  -->
 </fieldset>
 
 <!-- Profesores -->
-<fieldset name="FSProfes" hidden=True>
-    <legend>Estudiantes</legend>
+<fieldset id="FSProfes" hidden = true>
+    <legend>Profesores</legend>
 <label for="departamento"> Departamento  </label>  <input id="departamento" >		<br>
 <label for="materia"     > materia  </label>  <input id="materia" >	<br>
 <label for="facultad"    > facultad </label>  <input id="facultad" >	<br>
 </fieldset>
 
 <!-- Directivos -->
-<fieldset name="FSProfes" hidden=True>
-    <legend>Estudiantes</legend>
-<label for="departamento"> Departamento  </label>  <input id="departamento" >		<br>
-<label for="materia"     > materia  </label>  <input id="materia" >	<br>
-<label for="facultad"    > facultad </label>  <input id="facultad" >	<br>
+<fieldset id="FSDirectivo" hidden = true>
+    <legend>Personal Administrativo</legend>
+<label for="Unidad"> Unidad  </label>  <input id="Unidad" >		<br>
 </fieldset>
 
 <!-- Personal Aseo -->
-<fieldset name="FSAseo" hidden=True>
+<fieldset id="FSAseo" hidden = true>
     <legend>Personal de Aseo</legend>
 <label for="turno"> Turno  </label>  <input id="turno" >		<br>
 </fieldset>
 
+<script type="text/javascript">
+    document.getElementById("SelTipoPersona").onchange = function() {CambiarTipoPersona()};
 
+    function CambiarTipoPersona()
+    {
+        const Tipo = document.getElementById("SelTipoPersona");
+        if (Tipo.value == 0){
+            document.getElementById("FSEstudiantes").hidden = true;
+            document.getElementById("FSProfes").hidden = true;
+            document.getElementById("FSDirectivo").hidden = true;
+            document.getElementById("FSAseo").hidden = true;
+        }
+
+        if (Tipo.value == 1){
+            document.getElementById("FSEstudiantes").hidden = false;
+            document.getElementById("FSProfes").hidden = true;
+            document.getElementById("FSDirectivo").hidden = true;
+            document.getElementById("FSAseo").hidden = true;
+
+        }
+        if (Tipo.value == 2){
+            document.getElementById("FSEstudiantes").hidden = true;
+            document.getElementById("FSProfes").hidden = false;
+            document.getElementById("FSDirectivo").hidden = true;
+            document.getElementById("FSAseo").hidden = true;
+
+
+        }
+        if (Tipo.value == 3){
+           document.getElementById("FSEstudiantes").hidden = true;
+            document.getElementById("FSProfes").hidden = true;
+            document.getElementById("FSDirectivo").hidden = false;
+            document.getElementById("FSAseo").hidden = true;
+        }
+        if (Tipo.value == 4){
+           document.getElementById("FSEstudiantes").hidden = true;
+            document.getElementById("FSProfes").hidden = true;
+            document.getElementById("FSDirectivo").hidden = true;
+            document.getElementById("FSAseo").hidden = false;
+        }
+    }
+
+
+</script>
 
 </form>
