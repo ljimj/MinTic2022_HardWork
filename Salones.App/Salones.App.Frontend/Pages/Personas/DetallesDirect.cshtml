@@ -1,0 +1,34 @@
+﻿@page
+@model Salones.App.Frontend.Pages.DetallesDirectModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Detalles Directivo</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo identificacion</th>
+            <th scope="col">Numero de documento</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Estado COVID</th>
+            <th scope="col">Unidad</th>
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <td> @Model.directivo.nombres </td>
+            <td> @Model.directivo.apellidos </td>
+            <td> @Model.directivo.tipoIdentificacion </td>
+            <td> @Model.directivo.identificacion </td>
+            <td> @Model.directivo.edad </td>
+            <td> @Model.directivo.estadoCovid </td>
+            <td> @Model.directivo.unidad </td>
+            
+        </tr>
+       </tbody>
+</table>
+<a class="nav-link" asp-area="" asp-page="/Personas/ListDirect">Volver</a>
