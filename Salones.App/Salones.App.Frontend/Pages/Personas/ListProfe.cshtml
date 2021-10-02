@@ -1,0 +1,35 @@
+﻿@page
+@model Salones.App.Frontend.Pages.ListProfeModel
+@{
+    ViewData["Title"] = "Listas";
+}
+<h1>Listado de Profesores</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo identificacion</th>
+            <th scope="col">Numero de documento</th>
+        </tr>
+     </thead>
+      @foreach (var profe in Model.profesores)
+    {
+    <tbody>
+        <tr>
+            <!--<td> @profe.id </td>-->
+            <td> @profe.nombres </td>
+            <td> @profe.apellidos </td>
+            <td> @profe.tipoIdentificacion </td>
+            <td> @profe.identificacion </td>
+            <td>
+                <a class="btn btn-primary table-tbn" asp-page="./DetallesProfe" asp-route-profeId="@profe.id">
+                <i class="fas fa-info-circle"></i>
+                Detalles
+                </a>
+            </td>
+        </tr>
+       </tbody>
+    }
+</table>

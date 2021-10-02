@@ -233,7 +233,6 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListAseo.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListCovid.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListEstud.cshtml.g.cs
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListProfe.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListSede.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiAseo.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiCovid.cshtml.g.cs
@@ -243,8 +242,6 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiSede.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\ingresos.cshtml.g.cs
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListDirect.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
@@ -313,3 +310,7 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\staticwebassets\Salones.App.Frontend.StaticWebAssets.xml
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.genruntimeconfig.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesDirect.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesProfe.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListProfe.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ingresos.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\Listas.cshtml.g.cs

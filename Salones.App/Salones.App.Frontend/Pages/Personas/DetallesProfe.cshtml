@@ -1,0 +1,39 @@
+﻿@page
+@model Salones.App.Frontend.Pages.DetallesProfeModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Detalles Profesor</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo identificacion</th>
+            <th scope="col">Numero de documento</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Estado COVID</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">Materia</th>
+            <th scope="col">Facultad</th>
+            
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <td> @Model.profesor.nombres </td>
+            <td> @Model.profesor.apellidos </td>
+            <td> @Model.profesor.tipoIdentificacion </td>
+            <td> @Model.profesor.identificacion </td>
+            <td> @Model.profesor.edad </td>
+            <td> @Model.profesor.estadoCovid </td>
+            <td> @Model.profesor.departamento </td>
+            <td> @Model.profesor.materia </td>
+            <td> @Model.profesor.facultad </td>
+            
+        </tr>
+       </tbody>
+</table>
+<a class="nav-link" asp-area="" asp-page="/Personas/ListProfe">Volver</a>
