@@ -1,0 +1,35 @@
+﻿@page
+@model Salones.App.Frontend.Pages.ListAseoModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Listado de Personal de Aseo</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo identificacion</th>
+            <th scope="col">Numero de documento</th>
+        </tr>
+     </thead>
+      @foreach (var aseo in Model.personasAseo)
+    {
+    <tbody>
+        <tr>
+            <td> @aseo.nombres </td>
+            <td> @aseo.apellidos </td>
+            <td> @aseo.tipoIdentificacion </td>
+            <td> @aseo.identificacion </td>
+            <td>
+                <a class="btn btn-primary table-tbn" asp-page="./DetallesAseo" asp-route-aseoId="@aseo.id">
+                <i class="fas fa-info-circle"></i>
+                Detalles
+                </a>
+            </td>
+        </tr>
+       </tbody>
+    }
+</table>
