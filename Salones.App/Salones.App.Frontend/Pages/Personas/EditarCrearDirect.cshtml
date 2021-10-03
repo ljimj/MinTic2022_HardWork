@@ -1,0 +1,47 @@
+﻿@page
+@model Salones.App.Frontend.Pages.EditDirectModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Edicion Directivo</h1>
+<form method="post">
+    <input type="hidden" asp-for="directivo.id">
+    <div class="form-group">
+        <label asp-for="directivo.nombres"> Nombres</label>
+        <input asp-for="directivo.nombres" class="form-control">
+        <span class="text_danger" asp-validation.for="directivo.nombres"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.apellidos"> Apellidos </label>
+        <input asp-for="directivo.apellidos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.tipoIdentificacion">Tipo de identificacion</label>
+        <select  id="directivo.tipoIdentificacion" value="directivo.tipoIdentificacion" asp-for="directivo.tipoIdentificacion">
+            <option value="CC">Cedula Ciudadania</option>
+            <option value="RegistroCivil">Registro Civil</option>
+            <option value="TarjetaIdentidad">Tarjeta de Identidad</option>
+            <option value="CCExtranjera">Cedula de Extranjeria</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.identificacion">Numero Identificacion</label>
+        <input asp-for="directivo.identificacion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.edad"> Edad </label>
+        <input asp-for="directivo.edad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.estadoCovid"> Estado Covid </label>
+        <input asp-for="directivo.estadoCovid" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="directivo.unidad"> Unidad </label>
+        <input asp-for="directivo.unidad" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+</form><br>
+
+<a class="nav-link" asp-area="" asp-page="/Personas/ListDirect">Volver</a>
