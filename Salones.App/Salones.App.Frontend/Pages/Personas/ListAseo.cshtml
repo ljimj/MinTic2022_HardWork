@@ -29,7 +29,14 @@
                 Detalles
                 </a>
             </td>
+            <td>
+                <a class="btn btn-secondary table-btn" asp-page="./EditarCrearAseo" asp-route-aseoId="@aseo.id">
+                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+            </td>
+            
         </tr>
        </tbody>
     }
 </table>
+
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearAseo" >Adicionar Personal Aseo</a>

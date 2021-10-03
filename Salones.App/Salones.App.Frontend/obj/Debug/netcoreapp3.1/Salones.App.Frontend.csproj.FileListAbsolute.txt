@@ -320,3 +320,4 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearDirect.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearProfe.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearEstud.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearAseo.cshtml.g.cs

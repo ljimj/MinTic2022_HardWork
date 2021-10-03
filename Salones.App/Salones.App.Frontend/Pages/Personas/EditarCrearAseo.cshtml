@@ -1,0 +1,48 @@
+﻿@page
+@model Salones.App.Frontend.Pages.EditarCrearAseoModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Personal Aseo</h1>
+<form method="post">
+    <input type="hidden" asp-for="personaAseo.id">
+    <div class="form-group">
+        <label asp-for="personaAseo.nombres"> Nombres</label>
+        <input asp-for="personaAseo.nombres" class="form-control">
+        <span class="text_danger" asp-validation.for="personaAseo.nombres"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.apellidos"> Apellidos </label>
+        <input asp-for="personaAseo.apellidos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.tipoIdentificacion">Tipo de identificacion</label>
+        <select  id="personaAseo.tipoIdentificacion" value="personaAseo.tipoIdentificacion" asp-for="personaAseo.tipoIdentificacion">
+            <option value="CC">Cedula Ciudadania</option>
+            <option value="RegistroCivil">Registro Civil</option>
+            <option value="TarjetaIdentidad">Tarjeta de Identidad</option>
+            <option value="CCExtranjera">Cedula de Extranjeria</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.identificacion">Numero Identificacion</label>
+        <input asp-for="personaAseo.identificacion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.edad"> Edad </label>
+        <input asp-for="personaAseo.edad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.estadoCovid"> Estado Covid </label>
+        <input asp-for="personaAseo.estadoCovid" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="personaAseo.turno"> Turno </label>
+        <input asp-for="personaAseo.turno" class="form-control">
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button> 
+        <a class="btn btn-primary table-tbn" asp-page="/Personas/ListAseo"> Volver </a>
+    </div>
+</form><br>

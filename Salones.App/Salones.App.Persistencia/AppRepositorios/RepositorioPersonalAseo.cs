@@ -29,6 +29,12 @@ namespace Salones.App.Persistencia
             var personalAseoEncontrado = _appContext.PersonasAseo.FirstOrDefault(p => p.id == personalAseo.id);
             if (personalAseoEncontrado != null)
             {
+                personalAseoEncontrado.nombres = personalAseo.nombres;
+                personalAseoEncontrado.apellidos = personalAseo.apellidos;
+                personalAseoEncontrado.tipoIdentificacion = personalAseo.tipoIdentificacion;
+                personalAseoEncontrado.identificacion = personalAseo.identificacion;
+                personalAseoEncontrado.edad = personalAseo.edad;
+                personalAseoEncontrado.estadoCovid = personalAseo.estadoCovid;
                 personalAseoEncontrado.id = personalAseo.id;
                 personalAseoEncontrado.turno = personalAseo.turno;
 
