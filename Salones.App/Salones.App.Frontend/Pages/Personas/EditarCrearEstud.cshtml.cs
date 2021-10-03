@@ -9,24 +9,24 @@ using Salones.App.Dominio;
 
 namespace Salones.App.Frontend.Pages
 {
-    public class EditarCrearProfeModel : PageModel
+    public class EditarCrearEstudModel : PageModel
     {
-        private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
         [BindProperty]
         
-        public Profesor profesor{get;set;}
+        public Estudiante estudiante{get;set;}
         
-        public IActionResult OnGet(int? profeId)
+        public IActionResult OnGet(int? estudId)
         {
-            if(profeId.HasValue)
+            if(estudId.HasValue)
             {
-                profesor = _repoProfesor.GetProfesor(profeId.Value);
+                estudiante = _repoEstudiante.GetEstudiante(estudId.Value);
             }else
             {
-                profesor = new Profesor();
+                estudiante = new Estudiante();
             }
             
-            if(profesor == null)
+            if(estudiante == null)
             {
                 return RedirectToPage("/Index");
             }
@@ -42,11 +42,11 @@ namespace Salones.App.Frontend.Pages
             {
                 return Page();                
             }else{
-                if(profesor.id>0)
+                if(estudiante.id>0)
                 {
-                    profesor = _repoProfesor.UpdateProfesor(profesor);
+                    estudiante = _repoEstudiante.UpdateEstudiante(estudiante);
                 }else{
-                    _repoProfesor.AddProfesor(profesor);
+                    _repoEstudiante.AddEstudiante(estudiante);
                 }     
                 return RedirectToPage("/Index");
             }

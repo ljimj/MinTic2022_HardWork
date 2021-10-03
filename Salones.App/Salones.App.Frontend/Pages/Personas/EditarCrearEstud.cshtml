@@ -1,0 +1,61 @@
+﻿@page
+@model Salones.App.Frontend.Pages.EditarCrearEstudModel
+@{
+    ViewData["Title"] = "Listas";
+}
+
+<h1>Edicion Estudiante</h1>
+<form method="post">
+    <input type="hidden" asp-for="estudiante.id">
+    <div class="form-group">
+        <label asp-for="estudiante.nombres"> Nombres</label>
+        <input asp-for="estudiante.nombres" class="form-control">
+        <span class="text_danger" asp-validation.for="estudiante.nombres"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.apellidos"> Apellidos </label>
+        <input asp-for="estudiante.apellidos" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.tipoIdentificacion">Tipo de identificacion</label>
+        <select  id="estudiante.tipoIdentificacion" value="estudiante.tipoIdentificacion" asp-for="estudiante.tipoIdentificacion">
+            <option value="CC">Cedula Ciudadania</option>
+            <option value="RegistroCivil">Registro Civil</option>
+            <option value="TarjetaIdentidad">Tarjeta de Identidad</option>
+            <option value="CCExtranjera">Cedula de Extranjeria</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.identificacion">Numero Identificacion</label>
+        <input asp-for="estudiante.identificacion" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.edad"> Edad </label>
+        <input asp-for="estudiante.edad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid"> Estado Covid </label>
+        <input asp-for="estudiante.estadoCovid" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.carrera"> Carrera </label>
+        <input asp-for="estudiante.carrera" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.semestre"> Semestre </label>
+        <input asp-for="estudiante.semestre" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.facultad"> Facultad </label>
+        <select  id="estudiante.facultad" value="estudiante.facultad" asp-for="estudiante.facultad">
+            <option value="Ingenierias">Ingenierias</option>
+            <option value="Medicina">Medicina</option>
+            <option value="Derecho">Derecho</option>
+            <option value="Educacion">Educacion</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary" >Guardar Cambios</button> 
+        <a class="btn btn-primary table-tbn" asp-page="/Personas/ListEstud"> Volver </a>
+    </div>
+</form><br>
