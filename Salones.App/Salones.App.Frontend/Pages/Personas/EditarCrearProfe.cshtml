@@ -34,10 +34,6 @@
         <input asp-for="profesor.edad" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="profesor.estadoCovid"> Estado Covid </label>
-        <input asp-for="profesor.estadoCovid" class="form-control">
-    </div>
-    <div class="form-group">
         <label asp-for="profesor.departamento"> Departamento </label>
         <input asp-for="profesor.departamento" class="form-control">
     </div>
@@ -47,13 +43,34 @@
     </div>
     <div class="form-group">
         <label asp-for="profesor.facultad"> Facultad </label>
-        <select  id="profesor.facultad" value="profesor.facultad" asp-for="profesor.facultad">
+         <select  id="profesor.facultad" value="profesor.facultad" asp-for="profesor.facultad">
             <option value="Ingenierias">Ingenierias</option>
             <option value="Medicina">Medicina</option>
             <option value="Derecho">Derecho</option>
             <option value="Educacion">Educacion</option>
         </select>
     </div>
+    <h6> Informacion Covid-19 </h6>
+    <div class="form-group">
+        <label asp-for="profesor.estadoCovid.sintomas"> ¿Ha presentado sintomas? </label>
+        <input asp-for="profesor.estadoCovid.sintomas" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="profesor.estadoCovid.estadoCovid"> Estado Covid </label>
+        <select  id="profesor.estadoCovid.estadoCovid" value="profesor.estadoCovid.estadoCovid" asp-for="profesor.estadoCovid.estadoCovid">
+            <option value="positivo">Positivo</option>
+            <option value="negativo">Negativo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="profesor.estadoCovid.fechaDiagnostico"> Fecha prueba o diagnostico </label>
+        <input asp-for="profesor.estadoCovid.fechaDiagnostico" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="profesor.estadoCovid.periodoAislamiento"> Periodo de aislamiento </label>
+        <input asp-for="profesor.estadoCovid.periodoAislamiento" class="form-control">
+    </div>
+
     <div class="form-group">
         <button type="submit" class="btn btn-primary">Guardar Cambios</button> 
         <a class="btn btn-primary table-tbn" asp-page="/Personas/ListProfe"> Volver </a>
