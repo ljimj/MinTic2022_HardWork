@@ -52,6 +52,7 @@ namespace Salones.App.Persistencia
                 return;
             _appContext.Estudiantes.Remove(estudianteEncontrado);
             _appContext.SaveChanges();
+
         }
 
         Estudiante IRepositorioEstudiante.GetEstudiante(int idEstudiante)

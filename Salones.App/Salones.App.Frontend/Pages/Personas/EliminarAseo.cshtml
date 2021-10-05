@@ -1,12 +1,9 @@
 ﻿@page
-@model Salones.App.Frontend.Pages.DetallesAseoModel
+@model Salones.App.Frontend.Pages.EliminarAseoModel
 @{
-    ViewData["Title"] = "Listas";
 }
-
-<h1>Detalles Personal Aseo</h1>
-
-<table class="table table-striped">
+<h1>Se va a eliminar el Persona Aseo</h1>
+<table class="table">
     <thead>
         <tr>
             <th scope="col">Nombres</th>
@@ -21,7 +18,7 @@
             <th scope="col">Fecha Diagnostico</th>
             <th scope="col">Periodo Aislamiento </th>
         </tr>
-     </thead>
+    </thead>
     <tbody>
         <tr>
             <td> @Model.personaAseo.nombres </td>
@@ -35,8 +32,13 @@
             <td> </td>
             <td> </td>
             <td> </td>
-            
         </tr>
-       </tbody>
+    </tbody>
 </table>
-<a class="nav-link" asp-area="" asp-page="/Personas/ListAseo">Volver</a>
+<form method="post">
+    <input type="hidden" asp-for="personaAseo.id">
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        <a class="btn btn-primary table-tbn" asp-page="/Personas/ListAseo"> Volver </a>
+    </div>
+</form>

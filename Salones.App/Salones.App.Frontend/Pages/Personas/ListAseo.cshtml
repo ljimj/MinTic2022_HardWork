@@ -14,29 +14,32 @@
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
         </tr>
-     </thead>
-      @foreach (var aseo in Model.personasAseo)
+    </thead>
+    @foreach (var aseo in Model.personasAseo)
     {
-    <tbody>
-        <tr>
-            <td> @aseo.nombres </td>
-            <td> @aseo.apellidos </td>
-            <td> @aseo.tipoIdentificacion </td>
-            <td> @aseo.identificacion </td>
-            <td>
-                <a class="btn btn-primary table-tbn" asp-page="./DetallesAseo" asp-route-aseoId="@aseo.id">
-                <i class="fas fa-info-circle"></i>
-                Detalles
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-secondary table-btn" asp-page="./EditarCrearAseo" asp-route-aseoId="@aseo.id">
-                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
-            </td>
-            
-        </tr>
-       </tbody>
+        <tbody>
+            <tr>
+                <td> @aseo.nombres </td>
+                <td> @aseo.apellidos </td>
+                <td> @aseo.tipoIdentificacion </td>
+                <td> @aseo.identificacion </td>
+                <td>
+                    <a class="btn btn-primary table-tbn" asp-page="./DetallesAseo" asp-route-aseoId="@aseo.id">
+                        <i class="fas fa-info-circle"></i>
+                        Detalles
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-secondary table-btn" asp-page="./EditarCrearAseo" asp-route-aseoId="@aseo.id">
+                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./EliminarAseo" asp-route-aseoId="@aseo.id">
+                        <i class="fas fa-book-dead fa-lg"></i>Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
     }
 </table>
 
-<a class="btn btn-primary table-tbn" asp-page="./EditarCrearAseo" >Adicionar Personal Aseo</a>
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearAseo">Adicionar Personal Aseo</a>

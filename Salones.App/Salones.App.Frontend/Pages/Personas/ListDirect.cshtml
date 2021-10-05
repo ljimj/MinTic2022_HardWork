@@ -15,31 +15,33 @@
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
         </tr>
-     </thead>
-      @foreach (var direc in Model.directivos)
+    </thead>
+    @foreach (var direc in Model.directivos)
     {
-    <tbody>
-        <tr>
-            <!--<td> @direc.id </td>-->
+        <tbody>
+            <tr>
+                <!--<td> @direc.id </td>-->
             <td> @direc.nombres </td>
-            <td> @direc.apellidos </td>
-            <td> @direc.tipoIdentificacion </td>
-            <td> @direc.identificacion </td>
-            <td>
-                <a class="btn btn-primary table-tbn" asp-page="./DetallesDirect" asp-route-direcId="@direc.id">
-                <i class="fas fa-info-circle" aria-hidden="true"></i>
-                Detalles
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-secondary table-btn" asp-page="./EditarCrearDirect" asp-route-direcId="@direc.id">
-                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
-            </td>
-            
-        </tr>
-       </tbody>
+                <td> @direc.apellidos </td>
+                <td> @direc.tipoIdentificacion </td>
+                <td> @direc.identificacion </td>
+                <td>
+                    <a class="btn btn-primary table-tbn" asp-page="./DetallesDirect" asp-route-direcId="@direc.id">
+                        <i class="fas fa-info-circle" aria-hidden="true"></i>
+                        Detalles
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-secondary table-btn" asp-page="./EditarCrearDirect" asp-route-direcId="@direc.id">
+                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./EliminarDirect" asp-route-direcId="@direc.id">
+                        <i class="fas fa-book-dead fa-lg"></i>Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
     }
 </table>
 
-<a class="btn btn-primary table-tbn" asp-page="./EditarCrearDirect" >Adicionar Directivo</a>
-
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearDirect">Adicionar Directivo</a>

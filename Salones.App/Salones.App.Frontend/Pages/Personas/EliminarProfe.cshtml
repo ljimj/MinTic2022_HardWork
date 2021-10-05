@@ -1,0 +1,49 @@
+﻿@page
+@model Salones.App.Frontend.Pages.EliminarProfeModel
+@{
+}
+<h1>Se va a eliminar el Profesor</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Nombres</th>
+            <th scope="col">Apellidos</th>
+            <th scope="col">Tipo identificacion</th>
+            <th scope="col">Numero de documento</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Estado COVID</th>
+            <th scope="col">Departamento</th>
+            <th scope="col">Materia</th>
+            <th scope="col">Facultad</th>
+            <th scope="col">Sintomas</th>
+            <th scope="col">Estado Covid</th>
+            <th scope="col">Fecha Diagnostico</th>
+            <th scope="col">Periodo Aislamiento </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> @Model.profesor.nombres </td>
+            <td> @Model.profesor.apellidos </td>
+            <td> @Model.profesor.tipoIdentificacion </td>
+            <td> @Model.profesor.identificacion </td>
+            <td> @Model.profesor.edad </td>
+            <td> @Model.profesor.estadoCovid </td>
+            <td> @Model.profesor.departamento </td>
+            <td> @Model.profesor.materia </td>
+            <td> @Model.profesor.facultad </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+            <td> </td>
+        </tr>
+    </tbody>
+</table>
+<form method="post">
+    <input type="hidden" asp-for="profesor.id">
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        <a class="btn btn-primary table-tbn" asp-page="/Personas/ListProfe"> Volver </a>
+    </div>
+</form>

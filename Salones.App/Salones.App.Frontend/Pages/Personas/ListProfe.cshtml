@@ -14,29 +14,33 @@
             <th scope="col">Numero de documento</th>
             <th scope="col">Estado Covid</th>
         </tr>
-     </thead>
-      @foreach (var profe in Model.profesores)
+    </thead>
+    @foreach (var profe in Model.profesores)
     {
-    <tbody>
-        <tr>
-            <td> @profe.nombres </td>
-            <td> @profe.apellidos </td>
-            <td> @profe.tipoIdentificacion </td>
-            <td> @profe.identificacion </td>
-            <td>  </td>
-            <td>
-                <a class="btn btn-primary table-tbn" asp-page="./DetallesProfe" asp-route-profeId="@profe.id">
-                <i class="fas fa-info-circle"></i>
-                Detalles
-                </a>
-            </td>
-            <td>
-                <a class="btn btn-secondary table-btn" asp-page="./EditarCrearProfe" asp-route-profeId="@profe.id">
-                <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
-            </td>
-        </tr>
-       </tbody>
+        <tbody>
+            <tr>
+                <td> @profe.nombres </td>
+                <td> @profe.apellidos </td>
+                <td> @profe.tipoIdentificacion </td>
+                <td> @profe.identificacion </td>
+                <td> </td>
+                <td>
+                    <a class="btn btn-primary table-tbn" asp-page="./DetallesProfe" asp-route-profeId="@profe.id">
+                        <i class="fas fa-info-circle"></i>
+                        Detalles
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-secondary table-btn" asp-page="./EditarCrearProfe" asp-route-profeId="@profe.id">
+                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./EliminarProfe" asp-route-profeId="@profe.id">
+                        <i class="fas fa-book-dead fa-lg"></i>Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
     }
 </table>
 
-<a class="btn btn-primary table-tbn" asp-page="./EditarCrearProfe" >Adicionar Profesor</a>
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearProfe">Adicionar Profesor</a>
