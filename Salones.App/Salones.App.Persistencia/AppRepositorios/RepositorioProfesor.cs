@@ -10,7 +10,7 @@ namespace Salones.App.Persistencia
 
     public class RepositorioProfesor : IRepositorioProfesor
     {
-        private readonly AppContext _appContext;
+        private static AppContext _appContext;
 
         public RepositorioProfesor(AppContext appContext)
         {
@@ -24,14 +24,10 @@ namespace Salones.App.Persistencia
             return profesorAdicinado.Entity;
         }
 
-        
-
 
         Profesor IRepositorioProfesor.UpdateProfesor(Profesor profesor)
         {
-        
-
-            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id == profesor.id);
+             var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id == profesor.id);
 
              if (profesorEncontrado != null)
             {
@@ -46,12 +42,9 @@ namespace Salones.App.Persistencia
                 profesorEncontrado.facultad = profesor.facultad;
 
                 _appContext.SaveChanges();
-
-
             }
 
             return profesorEncontrado;
-
         }
         
 

@@ -29,7 +29,7 @@ namespace Salones.App.Frontend.Pages
             
             if(directivo == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListDirect");
             }
             else
             {
@@ -49,7 +49,7 @@ namespace Salones.App.Frontend.Pages
                 }else{
                     _repoDirectivo.AddDirectivo(directivo);
                 }     
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListDirect");
             }
         }
     }

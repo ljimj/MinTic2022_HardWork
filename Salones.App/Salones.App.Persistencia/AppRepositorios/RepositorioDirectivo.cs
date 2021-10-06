@@ -7,7 +7,7 @@ namespace Salones.App.Persistencia
 {
     public class RepositorioDirectivo : IRepositorioDirectivo
     {
-        private readonly AppContext _appContext;
+        private static AppContext _appContext;
 
         public RepositorioDirectivo(AppContext appContext)
         {

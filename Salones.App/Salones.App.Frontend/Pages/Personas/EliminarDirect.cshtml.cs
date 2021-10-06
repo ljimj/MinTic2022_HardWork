@@ -23,7 +23,7 @@ namespace Salones.App.Frontend.Pages
         public IActionResult OnPost()
         {
             _repoDirectivo.DeleteDirectivo(directivo.id);
-            return RedirectToPage("/Index");
+            return RedirectToPage("/Personas/ListDirect");
         }
     }
 }

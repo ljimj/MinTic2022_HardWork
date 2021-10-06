@@ -28,7 +28,7 @@ namespace Salones.App.Frontend.Pages
             
             if(profesor == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListProfe");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace Salones.App.Frontend.Pages
                 }else{
                     _repoProfesor.AddProfesor(profesor);
                 }     
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListProfe");
             }
         }
     }

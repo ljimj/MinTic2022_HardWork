@@ -28,7 +28,7 @@ namespace Salones.App.Frontend.Pages
             
             if(estudiante == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListEstud");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace Salones.App.Frontend.Pages
                 }else{
                     _repoEstudiante.AddEstudiante(estudiante);
                 }     
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListEstud");
             }
         }
     }

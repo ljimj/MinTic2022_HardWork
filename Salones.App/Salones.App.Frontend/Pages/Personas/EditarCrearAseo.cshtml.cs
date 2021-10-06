@@ -28,7 +28,7 @@ namespace Salones.App.Frontend.Pages
             
             if(personaAseo == null)
             {
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListAseo");
             }
             else
             {
@@ -48,7 +48,7 @@ namespace Salones.App.Frontend.Pages
                 }else{
                     _repoPersonalAseo.AddPersonalAseo(personaAseo);
                 }     
-                return RedirectToPage("/Index");
+                return RedirectToPage("/Personas/ListAseo");
             }
         }
     }
