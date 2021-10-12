@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v6NgVWZtdCrgX6IgT0iKAkX9xfKMJXqnhLHiK2srd4X+A/T1cLJQKFUrKNE4CsgOOnUDFc5+gWapVnbObpXoXg==",
+  "dgSpecHash": "3/862V4d95E0ZWObQM53DWOLhpjnXw6eyMEsCEWIT/zqU9RBIi14N/MmFbi82EopHyiwDicIOw3tsK8IXFybJw==",
   "success": true,
-  "projectFilePath": "C:\\MinTic2022_HardWork\\Salones.App\\salones.app.persistencia\\Salones.App.Persistencia.csproj",
+  "projectFilePath": "C:\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\LEO_J\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\LEO_J\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

@@ -8,7 +8,7 @@ namespace Salones.App.Dominio
     {
         public int id {get;set;}         //Id del registro de ingreso
 
-        public string FechaIngreso {get; set;}
+        public DateTime FechaIngreso {get; set;}
 
         public Persona persona {get; set;}
 

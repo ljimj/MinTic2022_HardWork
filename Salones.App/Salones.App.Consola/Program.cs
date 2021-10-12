@@ -16,10 +16,12 @@ namespace Salones.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            AddDirectivo();  //Por si se desea ejecutar
-            AddProfesor();
-            AddEstudiante();
+            //AddDirectivo();  //Por si se desea ejecutar
+            Profesor nuevoProfe = AddProfesor();
+            //AddEstudiante();
             
+            
+
             //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
@@ -32,31 +34,33 @@ namespace Salones.App.Consola
             //EliminarProfesor(6);
             //EliminarEstudiante(7);
             
-            BuscarDirectivos(); //Por si se desea ejecutar
-            BuscarProfesores();
-            BuscarEstudiantes();
+            //BuscarDirectivos(); //Por si se desea ejecutar
+            //BuscarProfesores();
+            //BuscarEstudiantes();
              
         }
         //AddProfesor
-        private static void AddProfesor()
+        private static Profesor AddProfesor()
         {
             var profesor = new Profesor 
             {
-               nombres = "Andrea Carolina",
-               apellidos = "Suarez Correa",
+               nombres = "Pedro Emilio",
+               apellidos = "Santa Fernandez",
                tipoIdentificacion = TipoIdentificacion.CC,
-               identificacion = "67456789",
-               edad = 47,
-               estadoCovid = null,
+               identificacion = "1010010334",
+               edad = 37,
+               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
                departamento = "Ingenieria de Sistemas",
                materia = "Programación básica",
                facultad = Facultad.Ingenierias
             };
 
-            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Materia: "+ profesor.materia);
+            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);
             Profesor profesor_retornado = _repoProfesor.AddProfesor(profesor);
             if (profesor_retornado!=null)
                 Console.WriteLine("Se registro un Profesor en la base de datos");
+            return profesor_retornado;
+
         }
         //GetProfesor
         private static void BuscarProfesor(int idProfesor)
@@ -102,6 +106,26 @@ namespace Salones.App.Consola
             
         }
 
+        private static void AdicionarProfesorCovid()
+        {
+            var profesor = new Profesor 
+            {
+               nombres = "Pedro Emilio",
+               apellidos = "Santa Fernandez",
+               tipoIdentificacion = TipoIdentificacion.CC,
+               identificacion = "1010010334",
+               edad = 37,
+               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
+               departamento = "Ingenieria de Sistemas",
+               materia = "Programación básica",
+               facultad = Facultad.Ingenierias
+            };
+
+            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);
+            Profesor profesor_retornado = _repoProfesor.AddProfesor(profesor);
+            if (profesor_retornado!=null)
+                Console.WriteLine("Se registro un Profesor en la base de datos");
+        }
 
         //AddEstudiante
         private static void AddEstudiante()
@@ -228,6 +252,8 @@ namespace Salones.App.Consola
             }
             
         }
+
+        
  
     }
 }

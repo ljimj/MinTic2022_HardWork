@@ -2,6 +2,7 @@ using System;
 using Salones.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Persistencia
 {
@@ -71,6 +72,12 @@ namespace Salones.App.Persistencia
         IEnumerable<Profesor> IRepositorioProfesor.GetAllProfesores()
         {
             return _appContext.Profesores;
+        }
+
+        Profesor IRepositorioProfesor.GetProfesorCovid(int idProfesor)
+        {
+            var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
+            return profesorEncontrado;
         }
 
 

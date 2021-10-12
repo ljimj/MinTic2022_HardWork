@@ -16,6 +16,9 @@ namespace Salones.App.Persistencia
         void DeleteProfesor(int idProfesor);
         //GetProfesor
         Profesor GetProfesor(int idProfesor);
+        //GetProfesorCovid
+        Profesor GetProfesorCovid(int idProfesor);
+
     }
 
 }    

@@ -8,7 +8,10 @@ namespace Salones.App.Dominio
 
         public int capacidad {get;set;}
 
-        public Boolean disponibilidad{get;set;}
+        public bool disponibilidad{get;set;}
+
+        public System.Collections.Generic.List<Persona> personasSalon {get;set;} 
+
        
     }
 }
