@@ -128,7 +128,6 @@ C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Co
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\bin\Debug\netcoreapp3.1\Salones.App.Persistencia.dll
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\bin\Debug\netcoreapp3.1\Salones.App.Dominio.pdb
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\bin\Debug\netcoreapp3.1\Salones.App.Persistencia.pdb
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.csprojAssemblyReference.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.AssemblyInfoInputs.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.AssemblyInfo.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.csproj.CoreCompileInputs.cache
@@ -202,3 +201,5 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\S
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.pdb
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.genruntimeconfig.cache
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.csproj.AssemblyReference.cache
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Consola\obj\Debug\netcoreapp3.1\Salones.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
