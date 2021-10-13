@@ -7,7 +7,7 @@ namespace Salones.App.Persistencia
     {
         //CRUD
         //GetAllSalones
-        IEnumerable<Sede> GetAllSede();
+        IEnumerable<Sede> GetAllSedes();
         //AddSalon
         Sede AddSede(Sede sede);
         //updateSalon
