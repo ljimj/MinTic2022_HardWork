@@ -14,6 +14,9 @@ namespace Salones.App.Consola
         private static IRepositorioCovid _repoCovid = new RepositorioCovid(new Persistencia.AppContext());
         private static IRepositorioSalon _repoSalon = new RepositorioSalon(new Persistencia.AppContext());
 
+        private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
+
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
@@ -21,13 +24,17 @@ namespace Salones.App.Consola
             //AddProfesor();
             //AddEstudiante();
             //AddSalon();
+            //AddPersonalAseo();
+
             
             
             //BuscarProfesorCovid(34);
-            //BuscarDirectivo(8); //Por si se desea ejecutar
+           // BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
-            
+            //
+
+
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //ActualizarProfesor();
             //ActualizarEstudiante();
@@ -279,6 +286,55 @@ namespace Salones.App.Consola
             return salon_retornado;
 
         }
+
+
+        /*
+
+         //CRUD
+        //GetAllPersonasAseo
+        IEnumerable<PersonalAseo> GetAllPersonasAseo();
+        //AddPersonalAseo
+        PersonalAseo AddPersonalAseo(PersonalAseo personalAseo);
+        //updatePersonalAseo
+        PersonalAseo UpdatePersonalAseo(PersonalAseo personalAseo);
+        //DeletePersonalAseo
+        void DeletePersonalAseo(int idPersonalAseo);
+        //GetPersonalAseo
+        PersonalAseo GetPersonalAseo(int idPersonalAseo);
+
+
+        */
+
+        
+
+        private static PersonalAseo AddPersonalAseo()
+        {
+            
+            
+            var personalAseo = new PersonalAseo 
+            {
+               nombres = "jacobo",
+               apellidos = "perez cabal",
+               tipoIdentificacion = TipoIdentificacion.CC,
+               identificacion = "15555554",
+               edad = 34,
+               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,13,10,30,15), periodoAislamiento = 0},
+               turno = "1",
+               
+             
+            };
+
+            Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+" \n-Estado Covid: "+ personalAseo.estadoCovid.estadoCovid);
+            PersonalAseo personalAseo_retornado = _repoPersonalAseo.AddPersonalAseo(personalAseo);
+            if (personalAseo_retornado!=null)
+                Console.WriteLine("Se registro un personal de aseo en la base de datos");
+            return personalAseo_retornado;
+            
+
+        }
+        
+
+
  
     }
 }

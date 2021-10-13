@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cjcdvyGpBGhIGXGYJbRRj/FXFaFmpG2uBRCrcopFMWW42vy9GkPRwSAQLXqHGefb2nyI0PaiSQ0JGZbcKrSLAg==",
+  "dgSpecHash": "1iek3LcKCDOfz4LFScdYK4HaXZScIJP+lasWfP6ubi3VR2VcoTwoKWF6uFp40WCftn4v2KTaV3ntqSPBUfQDrA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\salones.app.dominio\\Salones.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AUX ING\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\AUX ING\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
