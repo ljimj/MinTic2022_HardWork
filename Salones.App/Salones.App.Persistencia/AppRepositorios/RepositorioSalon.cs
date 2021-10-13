@@ -9,10 +9,15 @@ namespace Salones.App.Persistencia
     public class RepositorioSalon : IRepositorioSalon
     {
         private static AppContext _appContext;
-
+        IEnumerable<Salon> salones;
         public RepositorioSalon(AppContext appContext)
         {
             _appContext = appContext;
+        }
+
+        public RepositorioSalon(IEnumerable<Salon> salones)
+        {
+            this.salones = salones;
         }
 
         Salon IRepositorioSalon.AddSalon(Salon salon)

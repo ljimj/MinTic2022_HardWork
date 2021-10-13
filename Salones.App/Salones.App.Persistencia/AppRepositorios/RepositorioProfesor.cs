@@ -12,17 +12,23 @@ namespace Salones.App.Persistencia
     public class RepositorioProfesor : IRepositorioProfesor
     {
         private static AppContext _appContext;
+        IEnumerable<Profesor> profesores;
 
         public RepositorioProfesor(AppContext appContext)
         {
             _appContext = appContext;
         }
 
+        public RepositorioProfesor(IEnumerable<Profesor> profesores)
+        {
+            this.profesores = profesores;
+        }
+
         Profesor IRepositorioProfesor.AddProfesor(Profesor profesor)
         {
-            var profesorAdicinado = _appContext.Profesores.Add(profesor);
+            var profesorAdicionado = _appContext.Profesores.Add(profesor);
             _appContext.SaveChanges();
-            return profesorAdicinado.Entity;
+            return profesorAdicionado.Entity;
         }
 
 

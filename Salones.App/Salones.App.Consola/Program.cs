@@ -13,6 +13,7 @@ namespace Salones.App.Consola
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         private static IRepositorioCovid _repoCovid = new RepositorioCovid(new Persistencia.AppContext());
         private static IRepositorioSalon _repoSalon = new RepositorioSalon(new Persistencia.AppContext());
+        private static IRepositorioSede _repoSede = new RepositorioSede(new Persistencia.AppContext());
 
         static void Main(string[] args)
         {
@@ -20,10 +21,18 @@ namespace Salones.App.Consola
             //AddDirectivo();  //Por si se desea ejecutar
             //AddProfesor();
             //AddEstudiante();
-            AddSalon();
+            //AddSalon();
             
-            
-            //BuscarProfesorCovid(34);
+            Profesor profesor1 = BuscarProfesor(34); //BuscarProfesorCovid(34);
+            Profesor profesor2 = BuscarProfesor(36);
+            Profesor profesor3 = BuscarProfesor(37);
+
+            Salon salon1 = BuscarSalon(1);
+            Salon salon2 = BuscarSalon(2);
+            Salon salon3 = BuscarSalon(3);
+
+            AddSede(salon1, salon2, salon3, profesor1, profesor2, profesor3);
+
             //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
@@ -46,14 +55,14 @@ namespace Salones.App.Consola
         {
             var profesor = new Profesor 
             {
-               nombres = "Pedro Emilio",
-               apellidos = "Santa Fernandez",
+               nombres = "Camilo Andres",
+               apellidos = "Gonzales Suarez",
                tipoIdentificacion = TipoIdentificacion.CC,
-               identificacion = "1010010334",
+               identificacion = "1022345908",
                edad = 37,
-               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
-               departamento = "Ingenieria de Sistemas",
-               materia = "Programación básica",
+               estadoCovid = new Covid{sintomas=true, tipoSintomas=TipoSintomas.Fiebre, estadoCovid=true, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
+               departamento = "Ciencias de Educacion",
+               materia = "Ciencias sociales",
                facultad = Facultad.Ingenierias
             };
 
@@ -65,10 +74,11 @@ namespace Salones.App.Consola
 
         }
         //GetProfesor
-        private static void BuscarProfesor(int idProfesor)
+        private static Profesor BuscarProfesor(int idProfesor)
         {
             var profesor = _repoProfesor.GetProfesor(idProfesor);
             Console.WriteLine(profesor.nombres+" "+profesor.apellidos+"\n-Materia: "+profesor.materia+"\n-Identificación: "+profesor.identificacion);
+            return profesor;
         }
         //DeleteProfesor
         private static void EliminarProfesor(int idProfesor)
@@ -108,27 +118,7 @@ namespace Salones.App.Consola
             
         }
 
-        private static void AdicionarProfesorCovid()
-        {
-            var profesor = new Profesor 
-            {
-               nombres = "Pedro Emilio",
-               apellidos = "Santa Fernandez",
-               tipoIdentificacion = TipoIdentificacion.CC,
-               identificacion = "1010010334",
-               edad = 37,
-               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
-               departamento = "Ingenieria de Sistemas",
-               materia = "Programación básica",
-               facultad = Facultad.Ingenierias
-            };
-
-            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);
-            Profesor profesor_retornado = _repoProfesor.AddProfesor(profesor);
-            if (profesor_retornado!=null)
-                Console.WriteLine("Se registro un Profesor en la base de datos");
-        }
-
+        
         private static Profesor BuscarProfesorCovid(int idProfesor)
         {
             var profesor = _repoProfesor.GetProfesorCovid(idProfesor);
@@ -267,8 +257,8 @@ namespace Salones.App.Consola
         {
             var salon = new Salon 
             {
-                nombreSalon = "201",
-                capacidad = 30,
+                nombreSalon = "305",
+                capacidad = 28,
                 disponibilidad = true,
             };
 
@@ -278,6 +268,36 @@ namespace Salones.App.Consola
                 Console.WriteLine("Se registro un Salon en la base de datos");
             return salon_retornado;
 
+        }
+
+        //GetSalon
+        private static Salon BuscarSalon(int idSalon)
+        {
+            var salon = _repoSalon.GetSalon(idSalon);
+            return salon;
+        }
+
+        //AddSede
+        private static void AddSede(Salon salon1, Salon salon2, Salon salon3, Profesor profesor1, Profesor profesor2, Profesor profesor3)
+        {
+            var sede = new Sede 
+            {
+                cantidadSalones = 20,
+                salones = new List<Salon>{
+                    salon1,
+                    salon2,
+                    salon3
+                },
+                personasAutorizadas = new List<Persona>{
+                    profesor1,
+                    profesor2,
+                    profesor3
+                }
+            };
+
+            Sede sede_retornada = _repoSede.AddSede(sede);
+            if (sede_retornada!=null)
+                Console.WriteLine("Se registro una Nueva Sede en la base de datos");
         }
  
     }
