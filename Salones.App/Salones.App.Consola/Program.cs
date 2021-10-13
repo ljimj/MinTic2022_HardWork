@@ -20,7 +20,7 @@ namespace Salones.App.Consola
             //AddDirectivo();  //Por si se desea ejecutar
             //AddProfesor();
             //AddEstudiante();
-            AddSalon();
+            //AddSalon();
             
             
             //BuscarProfesorCovid(34);

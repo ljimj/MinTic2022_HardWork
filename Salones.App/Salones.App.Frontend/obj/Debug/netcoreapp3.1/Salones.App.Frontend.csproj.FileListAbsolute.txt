@@ -43,7 +43,6 @@ C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Fr
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\bin\Debug\netcoreapp3.1\Salones.App.Frontend.pdb
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\bin\Debug\netcoreapp3.1\Salones.App.Frontend.Views.dll
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\bin\Debug\netcoreapp3.1\Salones.App.Frontend.Views.pdb
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.csprojAssemblyReference.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.AssemblyInfoInputs.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.AssemblyInfo.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.csproj.CoreCompileInputs.cache
@@ -53,12 +52,7 @@ C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Fr
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.TagHelpers.input.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.TagHelpers.output.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.RazorCoreGenerate.cache
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListAseo.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListCovid.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListDirect.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListEstud.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListProfe.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ListSede.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiAseo.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiCovid.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiDirect.cshtml.g.cs
@@ -67,8 +61,6 @@ C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Fr
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ModiSede.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Index.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\ingresos.cshtml.g.cs
-C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Listas.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -325,3 +317,27 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarDirect.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarEstud.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarProfe.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.csproj.AssemblyReference.cache
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Salones.App.Frontend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\scopedcss\bundle\Salones.App.Frontend.styles.css
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\ingresos.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\db\Listas.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\AddPersona.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesAseo.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesDirect.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesEstud.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\DetallesProfe.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearAseo.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearDirect.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearEstud.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EditarCrearProfe.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarAseo.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarDirect.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarEstud.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\EliminarProfe.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListAseo.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListDirect.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListEstud.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Personas\ListProfe.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Universidad\ListSalon.cshtml.g.cs
+C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\netcoreapp3.1\Razor\Pages\Universidad\ListSede.cshtml.g.cs

@@ -10,8 +10,8 @@ using Salones.App.Persistencia;
 namespace Salones.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210923231654_Segunda")]
-    partial class Segunda
+    [Migration("20211013031400_MigracionCristhian")]
+    partial class MigracionCristhian
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,14 +31,17 @@ namespace Salones.App.Persistencia.Migrations
                     b.Property<bool>("estadoCovid")
                         .HasColumnType("bit");
 
-                    b.Property<string>("fechaDiagnostico")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<DateTime>("fechaDiagnostico")
+                        .HasColumnType("datetime2");
 
                     b.Property<int>("periodoAislamiento")
                         .HasColumnType("int");
 
-                    b.Property<string>("sintomas")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<bool>("sintomas")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("tipoSintomas")
+                        .HasColumnType("int");
 
                     b.HasKey("id");
 
@@ -52,18 +55,13 @@ namespace Salones.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<string>("FechaIngreso")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("personaid")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("FechaIngreso")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("salonid")
                         .HasColumnType("int");
 
                     b.HasKey("id");
-
-                    b.HasIndex("personaid");
 
                     b.HasIndex("salonid");
 
@@ -80,6 +78,9 @@ namespace Salones.App.Persistencia.Migrations
                     b.Property<string>("Discriminator")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("Ingresoid")
+                        .HasColumnType("int");
 
                     b.Property<int?>("Sedeid")
                         .HasColumnType("int");
@@ -103,6 +104,8 @@ namespace Salones.App.Persistencia.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("id");
+
+                    b.HasIndex("Ingresoid");
 
                     b.HasIndex("Sedeid");
 
@@ -128,6 +131,9 @@ namespace Salones.App.Persistencia.Migrations
 
                     b.Property<bool>("disponibilidad")
                         .HasColumnType("bit");
+
+                    b.Property<string>("nombreSalon")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("id");
 
@@ -206,21 +212,19 @@ namespace Salones.App.Persistencia.Migrations
 
             modelBuilder.Entity("Salones.App.Dominio.Ingreso", b =>
                 {
-                    b.HasOne("Salones.App.Dominio.Persona", "persona")
-                        .WithMany()
-                        .HasForeignKey("personaid");
-
                     b.HasOne("Salones.App.Dominio.Salon", "salon")
                         .WithMany()
                         .HasForeignKey("salonid");
-
-                    b.Navigation("persona");
 
                     b.Navigation("salon");
                 });
 
             modelBuilder.Entity("Salones.App.Dominio.Persona", b =>
                 {
+                    b.HasOne("Salones.App.Dominio.Ingreso", null)
+                        .WithMany("personasSalon")
+                        .HasForeignKey("Ingresoid");
+
                     b.HasOne("Salones.App.Dominio.Sede", null)
                         .WithMany("personasAutorizadas")
                         .HasForeignKey("Sedeid");
@@ -237,6 +241,11 @@ namespace Salones.App.Persistencia.Migrations
                     b.HasOne("Salones.App.Dominio.Sede", null)
                         .WithMany("salones")
                         .HasForeignKey("Sedeid");
+                });
+
+            modelBuilder.Entity("Salones.App.Dominio.Ingreso", b =>
+                {
+                    b.Navigation("personasSalon");
                 });
 
             modelBuilder.Entity("Salones.App.Dominio.Sede", b =>
