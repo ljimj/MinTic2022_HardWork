@@ -5,7 +5,7 @@ namespace Salones.App.Persistencia
 {
     public interface IRepositorioProfesor
     {
-         //CRUD
+        //CRUD
         //GetAllProfesores
         IEnumerable<Profesor> GetAllProfesores();
         //AddProfesores

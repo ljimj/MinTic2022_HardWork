@@ -29,7 +29,7 @@ namespace Salones.App.Persistencia
             var salonEncontrado = _appContext.Salones.FirstOrDefault(p => p.id == salon.id);
             if (salonEncontrado != null)
             {
-                salonEncontrado.id = salon.id;
+                salonEncontrado.nombreSalon = salon.nombreSalon;
                 salonEncontrado.capacidad = salon.capacidad;
                 salonEncontrado.disponibilidad = salon.disponibilidad;
                 

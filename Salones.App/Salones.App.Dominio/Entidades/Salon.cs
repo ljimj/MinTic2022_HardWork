@@ -6,12 +6,11 @@ namespace Salones.App.Dominio
     {
         public int id {get;set;}
 
+        public string nombreSalon {get;set;}
+
         public int capacidad {get;set;}
 
         public bool disponibilidad{get;set;}
 
-        public System.Collections.Generic.List<Persona> personasSalon {get;set;} 
-
-       
     }
 }

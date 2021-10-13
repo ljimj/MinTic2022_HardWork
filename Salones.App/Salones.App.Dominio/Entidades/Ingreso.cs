@@ -10,9 +10,9 @@ namespace Salones.App.Dominio
 
         public DateTime FechaIngreso {get; set;}
 
-        public Persona persona {get; set;}
-
         public Salon salon {get;set;}
+
+        public System.Collections.Generic.List<Persona> personasSalon {get;set;} 
         
      }
 }

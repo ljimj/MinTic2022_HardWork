@@ -12,16 +12,18 @@ namespace Salones.App.Consola
         private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         private static IRepositorioCovid _repoCovid = new RepositorioCovid(new Persistencia.AppContext());
+        private static IRepositorioSalon _repoSalon = new RepositorioSalon(new Persistencia.AppContext());
 
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
             //AddDirectivo();  //Por si se desea ejecutar
-            Profesor nuevoProfe = AddProfesor();
+            //AddProfesor();
             //AddEstudiante();
+            AddSalon();
             
             
-
+            //BuscarProfesorCovid(34);
             //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
@@ -125,6 +127,13 @@ namespace Salones.App.Consola
             Profesor profesor_retornado = _repoProfesor.AddProfesor(profesor);
             if (profesor_retornado!=null)
                 Console.WriteLine("Se registro un Profesor en la base de datos");
+        }
+
+        private static Profesor BuscarProfesorCovid(int idProfesor)
+        {
+            var profesor = _repoProfesor.GetProfesorCovid(idProfesor);
+            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);        
+            return profesor; 
         }
 
         //AddEstudiante
@@ -253,7 +262,23 @@ namespace Salones.App.Consola
             
         }
 
-        
+        //AddSalon
+        private static Salon AddSalon()
+        {
+            var salon = new Salon 
+            {
+                nombreSalon = "201",
+                capacidad = 30,
+                disponibilidad = true,
+            };
+
+            Console.WriteLine("-Salon: "+salon.nombreSalon+"\n-Capacidad: "+salon.capacidad+" \n-Disponibilidad: "+ salon.disponibilidad);
+            Salon salon_retornado = _repoSalon.AddSalon(salon);
+            if (salon_retornado!=null)
+                Console.WriteLine("Se registro un Salon en la base de datos");
+            return salon_retornado;
+
+        }
  
     }
 }
