@@ -1,4 +1,5 @@
-﻿using System;
+﻿using System.Dynamic;
+using System;
 using Salones.App.Dominio;
 using Salones.App.Persistencia;
 using System.Collections.Generic;
@@ -11,12 +12,10 @@ namespace Salones.App.Consola
         private static IRepositorioDirectivo _repoDirectivo = new RepositorioDirectivo(new Persistencia.AppContext());
         private static IRepositorioEstudiante _repoEstudiante = new RepositorioEstudiante(new Persistencia.AppContext());
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
+        private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
         private static IRepositorioCovid _repoCovid = new RepositorioCovid(new Persistencia.AppContext());
         private static IRepositorioSalon _repoSalon = new RepositorioSalon(new Persistencia.AppContext());
         private static IRepositorioSede _repoSede = new RepositorioSede(new Persistencia.AppContext());
-
-        private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
-
 
         static void Main(string[] args)
         {
@@ -26,16 +25,28 @@ namespace Salones.App.Consola
             //AddEstudiante();
             //AddSalon();
             //AddPersonalAseo();
+            //AddSede();
 
             
             
-            //BuscarProfesorCovid(34);
+            Profesor profe1 = BuscarProfesorCovid(34);
+            Profesor profe2 = BuscarProfesorCovid(36);
+
+            Salon salon1 = BuscarSalon(2);
+            Salon salon2 = BuscarSalon(3);
+
            // BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
+<<<<<<< HEAD
         
             BuscarPersonalAseo(1021); 
 
+=======
+            
+            AddPersonaSalonaSede(5, profe1, salon1);
+            AddPersonaSalonaSede(5, profe2, salon2);
+>>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //ActualizarProfesor();
@@ -51,7 +62,11 @@ namespace Salones.App.Consola
             //BuscarDirectivos(); //Por si se desea ejecutar
             //BuscarProfesores();
             //BuscarEstudiantes();
+<<<<<<< HEAD
             //BuscarPersonasAseo();
+=======
+            //BuscarPersonalAseo(24);
+>>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
 
              
         }
@@ -275,6 +290,13 @@ namespace Salones.App.Consola
 
         }
 
+        //GetSalon
+        private static Salon BuscarSalon(int idSalon)
+        {
+            var salon = _repoSalon.GetSalon(idSalon);
+            return salon;
+        }
+
 
         /*
 
@@ -321,7 +343,6 @@ namespace Salones.App.Consola
 
         }
 
-
             //GetPersonalAseo
         private static void BuscarPersonalAseo(int idPersonalAseo)
         {
@@ -344,6 +365,7 @@ namespace Salones.App.Consola
             
         }
 
+<<<<<<< HEAD
         //updatePersonalAseo
         private static void ActualizarPersonalAseo()
         {
@@ -375,6 +397,56 @@ namespace Salones.App.Consola
 
 
         
+=======
+        //Adicionar Sede
+        private static Sede AddSede()
+        {
+            var sede  = new Sede
+            {
+                cantidadSalones = 55,
+                salones=new List<Salon>{
+                    new Salon{nombreSalon="201",capacidad=30,disponibilidad=true},
+                    new Salon{nombreSalon="202",capacidad=30,disponibilidad=true},
+                    new Salon{nombreSalon="203",capacidad=30,disponibilidad=true}
+                },
+                personasAutorizadas=new List<Persona>{
+                    new Persona{nombres="Jacobo",apellidos="Jaramillo", tipoIdentificacion=TipoIdentificacion.CC, identificacion="1010345678",edad=34,estadoCovid = new Covid {sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,13,10,30,15), periodoAislamiento = 0}},
+                    new Persona{nombres="Tatiana",apellidos="Gómez", tipoIdentificacion=TipoIdentificacion.CC, identificacion="1010765432",edad=45, estadoCovid = new Covid {sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,13,10,30,15), periodoAislamiento = 0}},
+                    new Persona{nombres="Rolando",apellidos="Suarez", tipoIdentificacion=TipoIdentificacion.CC, identificacion="78546321",edad=55, estadoCovid = new Covid {sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=false, fechaDiagnostico = new DateTime(2021,10,13,10,30,15), periodoAislamiento = 0}}
+                },               
+            };
+            Sede sede_retornado =_repoSede.AddSede(sede);
+            return sede_retornado;
+        }
+
+        private static void AddPersonaSalonaSede(int idSede, Persona persona, Salon salon)
+        {
+            var sede = _repoSede.GetSede(idSede);
+            if(sede!=null)
+            {
+                if(sede.personasAutorizadas!=null)
+                {
+                    sede.personasAutorizadas.Add(persona);
+                }
+                else
+                {
+                    sede.personasAutorizadas = new List<Persona> ();
+                    sede.personasAutorizadas.Add(persona);
+                }
+
+                if(sede.salones!=null)
+                {
+                    sede.salones.Add(salon);
+                }
+                else
+                {
+                    sede.salones = new List<Salon> ();
+                    sede.salones.Add(salon);
+                }
+                _repoSede.UpdateSede(sede);
+            }
+        }
+>>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
 
     }
 }
