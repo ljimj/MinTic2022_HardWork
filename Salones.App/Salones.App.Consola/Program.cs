@@ -5,6 +5,7 @@ using Salones.App.Dominio;
 using Salones.App.Persistencia;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Consola
 {
@@ -30,7 +31,7 @@ namespace Salones.App.Consola
 
             
             
-            //Profesor profe1 = BuscarProfesorCovid(34);
+            //Profesor profe1 = BuscarProfesorCovid(1064);
             //Profesor profe2 = BuscarProfesorCovid(36);
 
             //Salon salon1 = BuscarSalon(1);
@@ -40,10 +41,10 @@ namespace Salones.App.Consola
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
         
-            //PersonalAseo personalA1 = BuscarPersonalAseo(42); 
+            //PersonalAseo personalA1 = BuscarPersonalAseo(1061); 
 
             
-            //AddPersonaSalonaSede(5, personalA1, salon1);
+            //AddPersonaSalonaSede(1, personalA1, salon1);
             //AddPersonaSalonaSede(5, profe2, salon2);
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
@@ -63,8 +64,9 @@ namespace Salones.App.Consola
             //BuscarPersonasAseo();
             //BuscarPersonalAseo(24);
 
-            buscarSedesConSalonesDisponibles(true);
+            //buscarSedesConSalonesDisponibles(true);
             buscarSedesConPersonasMayores();
+            buscarSedesConPersonasCovid();
 
              
         }
@@ -448,6 +450,24 @@ namespace Salones.App.Consola
             else
             {
                 Console.WriteLine("No hay personas mayores en las sedes universitarias");
+            }
+        }
+
+        //sede con covid
+
+        private static void buscarSedesConPersonasCovid()
+        {
+            var sedesConCovid = _repoSede.GetAllSedesPersonasCovid();
+            if(sedesConCovid != null)
+            {
+                foreach (var sede in sedesConCovid)
+                {
+                    Console.WriteLine("Personas con covid en la Sede: "+sede.id);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No hay personas con Covid");
             }
         }
 

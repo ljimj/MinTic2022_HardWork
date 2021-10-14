@@ -20,6 +20,10 @@ namespace Salones.App.Persistencia
         IEnumerable<Sede> GetAllSedesConSalonesDisponibles(bool disponibilidad);
         //GetAllSedes Con personas mayores de 60
         IEnumerable<Sede> GetAllSedesPersonasMayores();
+
+        //GEtAllSedes con personas covid
+
+        IEnumerable<Sede> GetAllSedesPersonasCovid();
    
     }
 }

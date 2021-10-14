@@ -59,5 +59,6 @@ namespace Salones.App.Persistencia
         {
             return _appContext.DiagnosticosCovid;
         }
+        
     }
 }
