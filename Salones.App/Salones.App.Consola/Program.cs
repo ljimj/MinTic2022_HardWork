@@ -29,24 +29,21 @@ namespace Salones.App.Consola
 
             
             
-            Profesor profe1 = BuscarProfesorCovid(34);
-            Profesor profe2 = BuscarProfesorCovid(36);
+            //Profesor profe1 = BuscarProfesorCovid(34);
+            //Profesor profe2 = BuscarProfesorCovid(36);
 
             Salon salon1 = BuscarSalon(2);
-            Salon salon2 = BuscarSalon(3);
+            //Salon salon2 = BuscarSalon(3);
 
-           // BuscarDirectivo(8); //Por si se desea ejecutar
+            //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
-<<<<<<< HEAD
         
-            BuscarPersonalAseo(1021); 
+            PersonalAseo personalA1 = BuscarPersonalAseo(41); 
 
-=======
             
-            AddPersonaSalonaSede(5, profe1, salon1);
-            AddPersonaSalonaSede(5, profe2, salon2);
->>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
+            AddPersonaSalonaSede(5, personalA1, salon1);
+            //AddPersonaSalonaSede(5, profe2, salon2);
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //ActualizarProfesor();
@@ -62,11 +59,8 @@ namespace Salones.App.Consola
             //BuscarDirectivos(); //Por si se desea ejecutar
             //BuscarProfesores();
             //BuscarEstudiantes();
-<<<<<<< HEAD
             //BuscarPersonasAseo();
-=======
             //BuscarPersonalAseo(24);
->>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
 
              
         }
@@ -344,10 +338,11 @@ namespace Salones.App.Consola
         }
 
             //GetPersonalAseo
-        private static void BuscarPersonalAseo(int idPersonalAseo)
+        private static PersonalAseo BuscarPersonalAseo(int idPersonalAseo)
         {
             var personalAseo = _repoPersonalAseo.GetPersonalAseo(idPersonalAseo);
             Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+"\n-turno: "+personalAseo.turno+"\n-Identificación: "+personalAseo.identificacion+"\n estado covid"+personalAseo.estadoCovid.sintomas );
+            return personalAseo;
         }
 
 
@@ -365,7 +360,6 @@ namespace Salones.App.Consola
             
         }
 
-<<<<<<< HEAD
         //updatePersonalAseo
         private static void ActualizarPersonalAseo()
         {
@@ -397,7 +391,6 @@ namespace Salones.App.Consola
 
 
         
-=======
         //Adicionar Sede
         private static Sede AddSede()
         {
@@ -446,7 +439,6 @@ namespace Salones.App.Consola
                 _repoSede.UpdateSede(sede);
             }
         }
->>>>>>> 3b8196dc648613ecbb3600977abcdb83afb8fdae
 
     }
 }
