@@ -18,7 +18,7 @@ namespace Salones.App.Persistencia
         Profesor GetProfesor(int idProfesor);
         //GetProfesorCovid
         Profesor GetProfesorCovid(int idProfesor);
-
+        
     }
 
 }    

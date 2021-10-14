@@ -16,6 +16,8 @@ namespace Salones.App.Persistencia
         void DeleteSede(int idSede);
         //GetSalon
         Sede GetSede(int idSede);
+        //GetAllSedes 
+        IEnumerable<Sede> GetAllSedesConSalonesDisponibles(bool disponibilidad);
    
     }
 }

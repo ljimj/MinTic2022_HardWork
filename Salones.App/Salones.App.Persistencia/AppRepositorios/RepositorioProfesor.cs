@@ -7,8 +7,6 @@ using Microsoft.EntityFrameworkCore;
 namespace Salones.App.Persistencia
 {
 
-
-
     public class RepositorioProfesor : IRepositorioProfesor
     {
         private static AppContext _appContext;
@@ -85,7 +83,7 @@ namespace Salones.App.Persistencia
             var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
             return profesorEncontrado;
         }
-
+       
 
     }
 

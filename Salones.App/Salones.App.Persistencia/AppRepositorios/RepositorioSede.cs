@@ -62,5 +62,10 @@ namespace Salones.App.Persistencia
         {
             return _appContext.Sedes;
         }
+
+        IEnumerable<Sede> IRepositorioSede.GetAllSedesConSalonesDisponibles(bool disponibilidad)
+        {
+            return _appContext.Sedes.Where(p=>p.salones.Any(s=>s.disponibilidad==disponibilidad)).ToList();
+        }
     }
 }

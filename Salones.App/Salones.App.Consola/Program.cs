@@ -1,4 +1,5 @@
-﻿using System.Dynamic;
+﻿using System.Collections;
+using System.Dynamic;
 using System;
 using Salones.App.Dominio;
 using Salones.App.Persistencia;
@@ -32,17 +33,17 @@ namespace Salones.App.Consola
             //Profesor profe1 = BuscarProfesorCovid(34);
             //Profesor profe2 = BuscarProfesorCovid(36);
 
-            Salon salon1 = BuscarSalon(2);
+            //Salon salon1 = BuscarSalon(1);
             //Salon salon2 = BuscarSalon(3);
 
             //BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
         
-            PersonalAseo personalA1 = BuscarPersonalAseo(41); 
+            //PersonalAseo personalA1 = BuscarPersonalAseo(42); 
 
             
-            AddPersonaSalonaSede(5, personalA1, salon1);
+            //AddPersonaSalonaSede(5, personalA1, salon1);
             //AddPersonaSalonaSede(5, profe2, salon2);
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
@@ -62,6 +63,8 @@ namespace Salones.App.Consola
             //BuscarPersonasAseo();
             //BuscarPersonalAseo(24);
 
+            buscarSedesConSalonesDisponibles(true);
+
              
         }
         //AddProfesor
@@ -69,15 +72,15 @@ namespace Salones.App.Consola
         {
             var profesor = new Profesor 
             {
-               nombres = "Camilo Andres",
-               apellidos = "Gonzales Suarez",
+               nombres = "Xiomara",
+               apellidos = "Gutierrez Ramirez",
                tipoIdentificacion = TipoIdentificacion.CC,
-               identificacion = "1022345908",
-               edad = 37,
+               identificacion = "1044567098",
+               edad = 33,
                estadoCovid = new Covid{sintomas=true, tipoSintomas=TipoSintomas.Fiebre, estadoCovid=true, fechaDiagnostico = new DateTime(2021,10,06,10,30,15), periodoAislamiento = 0},
-               departamento = "Ciencias de Educacion",
-               materia = "Ciencias sociales",
-               facultad = Facultad.Ingenierias
+               departamento = "Medicina",
+               materia = "Radiología",
+               facultad = Facultad.Medicina
             };
 
             Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);
@@ -290,26 +293,7 @@ namespace Salones.App.Consola
             var salon = _repoSalon.GetSalon(idSalon);
             return salon;
         }
-
-
-        /*
-
-         //CRUD
-        //--GetAllPersonasAseo
-        IEnumerable<PersonalAseo> GetAllPersonasAseo();
-        //--AddPersonalAseo
-        PersonalAseo AddPersonalAseo(PersonalAseo personalAseo);
-        //--updatePersonalAseo
-        PersonalAseo UpdatePersonalAseo(PersonalAseo personalAseo);
-        //DeletePersonalAseo
-        void DeletePersonalAseo(int idPersonalAseo);
-        //--GetPersonalAseo
-        PersonalAseo GetPersonalAseo(int idPersonalAseo);
-
-
-        */
-        
-        
+       
         //AddPersonalAseo
         private static PersonalAseo AddPersonalAseo()
         {
@@ -387,10 +371,6 @@ namespace Salones.App.Consola
         }
 
 
-        
-
-
-        
         //Adicionar Sede
         private static Sede AddSede()
         {
@@ -437,6 +417,15 @@ namespace Salones.App.Consola
                     sede.salones.Add(salon);
                 }
                 _repoSede.UpdateSede(sede);
+            }
+        }
+
+        private static void buscarSedesConSalonesDisponibles(bool disponibilidad)
+        {
+            var sedesConSalones = _repoSede.GetAllSedesConSalonesDisponibles(disponibilidad);
+            foreach (var sede in sedesConSalones)
+            {
+                Console.WriteLine("Sede: "+sede.id);
             }
         }
 
