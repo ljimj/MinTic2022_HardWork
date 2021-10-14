@@ -323,54 +323,10 @@ namespace Salones.App.Consola
         private static void BuscarPersonalAseo(int idPersonalAseo)
         {
             var personalAseo = _repoPersonalAseo.GetPersonalAseo(idPersonalAseo);
-            Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+"\n-turno: "+personalAseo.turno+"\n-Identificación: "+directivo.identificacion);
+            Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+"\n-turno: "+personalAseo.turno+"\n-Identificación: "+personalAseo.identificacion);
         }
-
-
-        
-
-
-
-    
-
-
-
-
-
-
 
         //prueba cristhian
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-        
-
-
- 
     }
 }
