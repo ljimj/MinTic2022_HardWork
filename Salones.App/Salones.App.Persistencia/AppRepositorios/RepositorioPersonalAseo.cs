@@ -2,6 +2,7 @@ using System;
 using Salones.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Persistencia
 
@@ -9,10 +10,16 @@ namespace Salones.App.Persistencia
     public class RepositorioPersonalAseo : IRepositorioPersonalAseo
     {
         private static AppContext _appContext;
+        IEnumerable<PersonalAseo> personasAseo;
 
         public RepositorioPersonalAseo(AppContext appContext)
         {
             _appContext = appContext;
+        }
+
+        public RepositorioPersonalAseo(IEnumerable<PersonalAseo> personasAseo)
+        {
+            this.personasAseo = personasAseo;
         }
 
         PersonalAseo IRepositorioPersonalAseo.AddPersonalAseo(PersonalAseo personalAseo)
@@ -55,8 +62,11 @@ namespace Salones.App.Persistencia
         PersonalAseo IRepositorioPersonalAseo.GetPersonalAseo(int idPersonalAseo)
         {
 
-            var PersonalAseoEncontrado = _appContext.PersonasAseo.FirstOrDefault(p => p.id == idPersonalAseo);
+            var PersonalAseoEncontrado = _appContext.PersonasAseo.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idPersonalAseo);
             return PersonalAseoEncontrado;
+
+
+
         }
 
         IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonasAseo()

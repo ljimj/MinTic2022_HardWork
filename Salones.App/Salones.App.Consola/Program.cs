@@ -33,21 +33,25 @@ namespace Salones.App.Consola
            // BuscarDirectivo(8); //Por si se desea ejecutar
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
-            
+        
+            BuscarPersonalAseo(1021); 
 
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //ActualizarProfesor();
             //ActualizarEstudiante();
+            //ActualizarPersonalAseo(1027);
             
             //EliminarDirectivo(5); //Por si se desea ejecutar
             //EliminarProfesor(6);
             //EliminarEstudiante(7);
+            //EliminarPersonalAseo(1023);
+            
             
             //BuscarDirectivos(); //Por si se desea ejecutar
             //BuscarProfesores();
             //BuscarEstudiantes();
-            BuscarPersonalAseo(24);
+            //BuscarPersonasAseo();
 
              
         }
@@ -275,15 +279,15 @@ namespace Salones.App.Consola
         /*
 
          //CRUD
-        //GetAllPersonasAseo
+        //--GetAllPersonasAseo
         IEnumerable<PersonalAseo> GetAllPersonasAseo();
         //--AddPersonalAseo
         PersonalAseo AddPersonalAseo(PersonalAseo personalAseo);
-        //updatePersonalAseo
+        //--updatePersonalAseo
         PersonalAseo UpdatePersonalAseo(PersonalAseo personalAseo);
         //DeletePersonalAseo
         void DeletePersonalAseo(int idPersonalAseo);
-        //GetPersonalAseo
+        //--GetPersonalAseo
         PersonalAseo GetPersonalAseo(int idPersonalAseo);
 
 
@@ -313,8 +317,7 @@ namespace Salones.App.Consola
             if (personalAseo_retornado!=null)
                 Console.WriteLine("Se registro un personal de aseo en la base de datos");
             return personalAseo_retornado;
-           //prueba cristhian2
-           //prueba Leo
+           
 
         }
 
@@ -323,10 +326,55 @@ namespace Salones.App.Consola
         private static void BuscarPersonalAseo(int idPersonalAseo)
         {
             var personalAseo = _repoPersonalAseo.GetPersonalAseo(idPersonalAseo);
-            Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+"\n-turno: "+personalAseo.turno+"\n-Identificación: "+personalAseo.identificacion);
+            Console.WriteLine(personalAseo.nombres+" "+personalAseo.apellidos+"\n-turno: "+personalAseo.turno+"\n-Identificación: "+personalAseo.identificacion+"\n estado covid"+personalAseo.estadoCovid.sintomas );
         }
 
-        //prueba cristhian
+
+        //GetAllPersonasAseo
+
+        private static void BuscarPersonasAseo()
+        {
+            IEnumerable<PersonalAseo> personasAseo = _repoPersonalAseo.GetAllPersonasAseo();
+            
+            foreach (var personalAseo in personasAseo)
+            {
+                Console.WriteLine(personalAseo.id+"-"+personalAseo.nombres,"\n"+personalAseo.estadoCovid.sintomas );
+               
+            }
+            
+        }
+
+        //updatePersonalAseo
+        private static void ActualizarPersonalAseo()
+        {
+            var personalAseo = new PersonalAseo 
+            {
+               id = 24,
+               nombres = "Mario",
+               apellidos = "satoshi",
+               tipoIdentificacion = TipoIdentificacion.CC,
+               identificacion = "7777777",
+               edad = 55,
+               estadoCovid = new Covid{sintomas=false, tipoSintomas=TipoSintomas.Ninguno, estadoCovid=true, fechaDiagnostico = new DateTime(2021,10,13,10,30,15), periodoAislamiento = 10},
+               turno = "5",
+            };
+            PersonalAseo personalAseo_retornado =_repoPersonalAseo.UpdatePersonalAseo(personalAseo);                         
+            if (personalAseo_retornado!=null)
+                Console.WriteLine("Se actualizó un persona de Aseo en la base de datos");
+        
+        }
+
+        //DeleteDirectivo
+        private static void EliminarPersonalAseo(int idPersonalAseo)
+        {
+            _repoPersonalAseo.DeletePersonalAseo(idPersonalAseo);
+        }
+
+
+        
+
+
+        
 
     }
 }
