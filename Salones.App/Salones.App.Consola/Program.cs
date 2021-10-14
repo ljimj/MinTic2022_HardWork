@@ -64,6 +64,7 @@ namespace Salones.App.Consola
             //BuscarPersonalAseo(24);
 
             buscarSedesConSalonesDisponibles(true);
+            buscarSedesConPersonasMayores();
 
              
         }
@@ -423,9 +424,30 @@ namespace Salones.App.Consola
         private static void buscarSedesConSalonesDisponibles(bool disponibilidad)
         {
             var sedesConSalones = _repoSede.GetAllSedesConSalonesDisponibles(disponibilidad);
-            foreach (var sede in sedesConSalones)
+            if(sedesConSalones!=null)
             {
-                Console.WriteLine("Sede: "+sede.id);
+                foreach (var sede in sedesConSalones)
+                {
+                    Console.WriteLine("Salones disponibles en la Sede: "+sede.id);
+                }
+            }else{
+                Console.WriteLine("No hay salones disponibles en las sedes de la Universidad");
+            }
+        }
+
+        private static void buscarSedesConPersonasMayores()
+        {
+            var sedesConMayores = _repoSede.GetAllSedesPersonasMayores();
+            if(sedesConMayores!=null)
+            {
+                foreach (var sede in sedesConMayores)
+                {
+                    Console.WriteLine("Personas mayores de 60 años en la Sede: "+sede.id);
+                }
+            }
+            else
+            {
+                Console.WriteLine("No hay personas mayores en las sedes universitarias");
             }
         }
 

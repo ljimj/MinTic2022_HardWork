@@ -62,10 +62,15 @@ namespace Salones.App.Persistencia
         {
             return _appContext.Sedes;
         }
-
+        //GetAllSedes con estado de disponibilidad
         IEnumerable<Sede> IRepositorioSede.GetAllSedesConSalonesDisponibles(bool disponibilidad)
         {
             return _appContext.Sedes.Where(p=>p.salones.Any(s=>s.disponibilidad==disponibilidad)).ToList();
+        }
+        //GetAllSedes Con personas mayores de 60
+        IEnumerable<Sede> IRepositorioSede.GetAllSedesPersonasMayores()
+        {
+            return _appContext.Sedes.Where(p=>p.personasAutorizadas.Any(s=>s.edad>60)).ToList();
         }
     }
 }

@@ -16,8 +16,10 @@ namespace Salones.App.Persistencia
         void DeleteSede(int idSede);
         //GetSalon
         Sede GetSede(int idSede);
-        //GetAllSedes 
+        //GetAllSedes con estado de disponibilidad
         IEnumerable<Sede> GetAllSedesConSalonesDisponibles(bool disponibilidad);
+        //GetAllSedes Con personas mayores de 60
+        IEnumerable<Sede> GetAllSedesPersonasMayores();
    
     }
 }
