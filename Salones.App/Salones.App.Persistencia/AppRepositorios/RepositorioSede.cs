@@ -8,10 +8,16 @@ namespace Salones.App.Persistencia
     public class RepositorioSede : IRepositorioSede
     {
         private static AppContext _appContext;
+        IEnumerable<Sede> sedes;
 
         public RepositorioSede(AppContext appContext)
         {
             _appContext = appContext;
+        }
+
+        public RepositorioSede(IEnumerable<Sede> sedes)
+        {
+            this.sedes = sedes;
         }
 
         Sede IRepositorioSede.AddSede(Sede sede)
