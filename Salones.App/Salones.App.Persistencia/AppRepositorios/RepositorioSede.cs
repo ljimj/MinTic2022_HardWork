@@ -72,5 +72,10 @@ namespace Salones.App.Persistencia
         {
             return _appContext.Sedes.Where(p=>p.personasAutorizadas.Any(s=>s.edad>60)).ToList();
         }
+
+         IEnumerable<Sede> IRepositorioSede.GetAllSedesPersonasCovid()
+        {
+            return _appContext.Sedes.Where(p=>p.personasAutorizadas.Any(s=>s.estadoCovid.sintomas==true)).ToList();
+        }
     }
 }
