@@ -39,8 +39,8 @@ namespace Salones.App.Consola
             //BuscarProfesor(9); //Por si se desea ejecutar
             //BuscarEstudiante(10); //Por si se desea ejecutar
             
-            AddProfesorSalonaSede(5, profe1, salon1);
-            AddProfesorSalonaSede(5, profe2, salon2);
+            AddPersonaSalonaSede(5, profe1, salon1);
+            AddPersonaSalonaSede(5, profe2, salon2);
 
             //ActualizarDirectivo(); //Por si se desea ejecutar
             //ActualizarProfesor();
@@ -359,19 +359,19 @@ namespace Salones.App.Consola
             return sede_retornado;
         }
 
-        private static void AddProfesorSalonaSede(int idSede, Profesor profesor, Salon salon)
+        private static void AddPersonaSalonaSede(int idSede, Persona persona, Salon salon)
         {
             var sede = _repoSede.GetSede(idSede);
             if(sede!=null)
             {
                 if(sede.personasAutorizadas!=null)
                 {
-                    sede.personasAutorizadas.Add(profesor);
+                    sede.personasAutorizadas.Add(persona);
                 }
                 else
                 {
                     sede.personasAutorizadas = new List<Persona> ();
-                    sede.personasAutorizadas.Add(profesor);
+                    sede.personasAutorizadas.Add(persona);
                 }
 
                 if(sede.salones!=null)
