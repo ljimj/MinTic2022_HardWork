@@ -10,7 +10,10 @@ namespace Salones.App.Persistencia
     public class RepositorioProfesor : IRepositorioProfesor
     {
         private static AppContext _appContext;
+
         IEnumerable<Profesor> profesores;
+        
+        private static IRepositorioCovid _repoCovid = new RepositorioCovid(new Persistencia.AppContext());
 
         public RepositorioProfesor(AppContext appContext)
         {
@@ -44,11 +47,8 @@ namespace Salones.App.Persistencia
                 profesorEncontrado.departamento=profesor.departamento;
                 profesorEncontrado.materia=profesor.materia;
                 profesorEncontrado.facultad = profesor.facultad;
-                //profesorEncontrado.estadoCovid.sintomas=profesor.estadoCovid.sintomas;
-                //profesorEncontrado.estadoCovid.tipoSintomas=profesor.estadoCovid.tipoSintomas;
                 profesorEncontrado.estadoCovid=profesor.estadoCovid;
-                //profesorEncontrado.estadoCovid.fechaDiagnostico=profesor.estadoCovid.fechaDiagnostico;
-                //profesorEncontrado.estadoCovid.periodoAislamiento=profesor.estadoCovid.periodoAislamiento;
+                //_repoCovid.UpdateCovid(profesor.estadoCovid);
                 
                 _appContext.SaveChanges();
             }

@@ -2,3 +2,34 @@
 @model Salones.App.Frontend.Pages.DetallesSedeModel
 @{
 }
+<h1>Detalles Sede Universidad</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Sede</th>
+            <th scope="col">Cantidad de Salones</th>
+            <th scope="col">Salones</th>
+            <th scope="col">Personas Autorizadas</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> @Model.sede.id </td>
+            <td> @Model.sede.cantidadSalones </td>
+            <td> 
+                @foreach(var salon in Model.sede.salones)
+                {
+                    <ul> @salon.nombreSalon </ul>
+                }
+            </td>
+            <td> @foreach(var persona in Model.sede.personasAutorizadas)
+                {
+                    <ul> @persona.identificacion - @persona.nombres @persona.apellidos </ul>
+                }
+            </td>
+
+        </tr>
+    </tbody>
+</table>
+<a class="nav-link" asp-area="" asp-page="/Universidad/ListSede">Volver</a>

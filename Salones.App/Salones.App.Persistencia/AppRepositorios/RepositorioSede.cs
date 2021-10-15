@@ -2,6 +2,7 @@ using System;
 using Salones.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Persistencia
 {
@@ -54,7 +55,7 @@ namespace Salones.App.Persistencia
         Sede IRepositorioSede.GetSede(int idSede)
         {
 
-            var SedeEncontrado = _appContext.Sedes.FirstOrDefault(p => p.id == idSede);
+            var SedeEncontrado = _appContext.Sedes.Include(p => p.salones).Include(p => p.personasAutorizadas).FirstOrDefault(p => p.id == idSede);
             return SedeEncontrado;
         }
 

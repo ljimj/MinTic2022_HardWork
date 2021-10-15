@@ -30,6 +30,7 @@ namespace Salones.App.Persistencia
             if (covidEncontrado != null)
             {
                 covidEncontrado.sintomas = covid.sintomas;
+                covidEncontrado.tipoSintomas = covid.tipoSintomas;
                 covidEncontrado.estadoCovid = covid.estadoCovid;
                 covidEncontrado.fechaDiagnostico = covid.fechaDiagnostico;
                 covidEncontrado.periodoAislamiento = covid.periodoAislamiento;
