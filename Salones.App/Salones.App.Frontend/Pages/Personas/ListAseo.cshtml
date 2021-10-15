@@ -13,6 +13,7 @@
             <th scope="col">Apellidos</th>
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
+            <th scope="col">Estado Covid</th>
         </tr>
     </thead>
     @foreach (var aseo in Model.personasAseo)
@@ -23,6 +24,7 @@
                 <td> @aseo.apellidos </td>
                 <td> @aseo.tipoIdentificacion </td>
                 <td> @aseo.identificacion </td>
+                <td> @aseo.estadoCovid.estadoCovid.</td>
                 <td>
                     <a class="btn btn-primary table-tbn" asp-page="./DetallesAseo" asp-route-aseoId="@aseo.id">
                         <i class="fas fa-info-circle"></i>
