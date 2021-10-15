@@ -12,6 +12,7 @@
             <th scope="col">Apellidos</th>
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
+            <th scope="col">Estado Covid</th>
         </tr>
     </thead>
     @foreach (var estud in Model.estudiantes)
@@ -23,6 +24,7 @@
                 <td> @estud.apellidos </td>
                 <td> @estud.tipoIdentificacion </td>
                 <td> @estud.identificacion </td>
+                <td> @estud.estadoCovid.estadoCovid.</td>
                 <td>
                     <a class="btn btn-primary table-tbn" asp-page="./DetallesEstud" asp-route-estudId="@estud.id">
                         <i class="fas fa-info-circle"></i>

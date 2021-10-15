@@ -1,6 +1,7 @@
 using Salones.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Persistencia
 
@@ -26,7 +27,7 @@ namespace Salones.App.Persistencia
         Estudiante IRepositorioEstudiante.UpdateEstudiante(Estudiante estudiante)
         {
             
-            var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.id == estudiante.id);
+            var estudianteEncontrado = _appContext.Estudiantes.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == estudiante.id);
             if (estudianteEncontrado != null)
             {
 
@@ -47,7 +48,7 @@ namespace Salones.App.Persistencia
 
         void IRepositorioEstudiante.DeleteEstudiante (int idEstudiante)
         {
-            var estudianteEncontrado = _appContext.Estudiantes.FirstOrDefault(p => p.id == idEstudiante);
+            var estudianteEncontrado = _appContext.Estudiantes.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == idEstudiante);
             if (estudianteEncontrado == null)
                 return;
             _appContext.Estudiantes.Remove(estudianteEncontrado);
@@ -58,13 +59,13 @@ namespace Salones.App.Persistencia
         Estudiante IRepositorioEstudiante.GetEstudiante(int idEstudiante)
         {
 
-            var EstudianteEncontrado= _appContext.Estudiantes.FirstOrDefault(p => p.id == idEstudiante);
+            var EstudianteEncontrado= _appContext.Estudiantes.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == idEstudiante);
             return EstudianteEncontrado;
         }
 
         IEnumerable<Estudiante> IRepositorioEstudiante.GetAllEstudiantes()
         {
-            return _appContext.Estudiantes;
+            return _appContext.Estudiantes.Include(p => p.estadoCovid);
         }
     }
 }

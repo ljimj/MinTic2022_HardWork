@@ -60,7 +60,7 @@ namespace Salones.App.Persistencia
 
         void IRepositorioProfesor.DeleteProfesor (int idProfesor)
         {
-            var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id == idProfesor);
+            var profesorEncontrado = _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == idProfesor);
             
 
             if(profesorEncontrado== null)

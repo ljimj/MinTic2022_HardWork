@@ -18,6 +18,7 @@
             <th scope="col">Semestre</th>
             <th scope="col">Facultad</th>
             <th scope="col">Sintomas</th>
+            <th scope="col">Tipo de Sintomas</th>
             <th scope="col">Estado Covid</th>
             <th scope="col">Fecha Diagnostico</th>
             <th scope="col">Periodo Aislamiento </th>
@@ -34,11 +35,11 @@
             <td> @Model.estudiante.carrera </td>
             <td> @Model.estudiante.semestre </td>
             <td> @Model.estudiante.facultad </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            
+            <td> @Model.estudiante.estadoCovid.sintomas</td>
+            <td> @Model.estudiante.estadoCovid.tipoSintomas</td>
+            <td> @Model.estudiante.estadoCovid.estadoCovid</td>
+            <td> @Model.estudiante.estadoCovid.fechaDiagnostico</td>
+            <td> @Model.estudiante.estadoCovid.periodoAislamiento</td>
         </tr>
        </tbody>
 </table>

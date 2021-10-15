@@ -1,6 +1,7 @@
 using Salones.App.Dominio;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace Salones.App.Persistencia
 
@@ -26,7 +27,7 @@ namespace Salones.App.Persistencia
         Directivo IRepositorioDirectivo.UpdateDirectivo(Directivo directivo)
         {
             
-            var directivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.id == directivo.id);
+            var directivoEncontrado = _appContext.Directivos.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == directivo.id);
             if (directivoEncontrado != null)
             {
                 directivoEncontrado.nombres = directivo.nombres;
@@ -44,7 +45,7 @@ namespace Salones.App.Persistencia
 
         void IRepositorioDirectivo.DeleteDirectivo (int idDirectivo)
         {
-            var directivoEncontrado = _appContext.Directivos.FirstOrDefault(p => p.id == idDirectivo);
+            var directivoEncontrado = _appContext.Directivos.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == idDirectivo);
             if (directivoEncontrado == null)
                 return;
             _appContext.Directivos.Remove(directivoEncontrado);
@@ -60,7 +61,7 @@ namespace Salones.App.Persistencia
 
         IEnumerable<Directivo> IRepositorioDirectivo.GetAllDirectivos()
         {
-            return _appContext.Directivos;
+            return _appContext.Directivos.Include(p => p.estadoCovid);
         }
 
     }

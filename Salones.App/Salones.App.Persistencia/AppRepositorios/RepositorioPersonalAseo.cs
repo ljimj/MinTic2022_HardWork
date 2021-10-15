@@ -33,7 +33,7 @@ namespace Salones.App.Persistencia
         PersonalAseo IRepositorioPersonalAseo.UpdatePersonalAseo(PersonalAseo personalAseo)
         {
             
-            var personalAseoEncontrado = _appContext.PersonasAseo.FirstOrDefault(p => p.id == personalAseo.id);
+            var personalAseoEncontrado = _appContext.PersonasAseo.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == personalAseo.id);
             if (personalAseoEncontrado != null)
             {
                 personalAseoEncontrado.nombres = personalAseo.nombres;
@@ -52,7 +52,7 @@ namespace Salones.App.Persistencia
 
         void IRepositorioPersonalAseo.DeletePersonalAseo (int idPersonalAseo)
         {
-            var personalAseoEncontrado = _appContext.PersonasAseo.FirstOrDefault(p => p.id == idPersonalAseo);
+            var personalAseoEncontrado = _appContext.PersonasAseo.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == idPersonalAseo);
             if (personalAseoEncontrado == null)
                 return;
             _appContext.PersonasAseo.Remove(personalAseoEncontrado);
@@ -71,7 +71,7 @@ namespace Salones.App.Persistencia
 
         IEnumerable<PersonalAseo> IRepositorioPersonalAseo.GetAllPersonasAseo()
         {
-            return _appContext.PersonasAseo;
+            return _appContext.PersonasAseo.Include(p => p.estadoCovid);
         }
         
 

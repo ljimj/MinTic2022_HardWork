@@ -34,10 +34,6 @@
         <input asp-for="estudiante.edad" class="form-control">
     </div>
     <div class="form-group">
-        <label asp-for="estudiante.estadoCovid"> Estado Covid </label>
-        <input asp-for="estudiante.estadoCovid" class="form-control">
-    </div>
-    <div class="form-group">
         <label asp-for="estudiante.carrera"> Carrera </label>
         <input asp-for="estudiante.carrera" class="form-control">
     </div>
@@ -53,6 +49,44 @@
             <option value="Derecho">Derecho</option>
             <option value="Educacion">Educacion</option>
         </select>
+    </div>
+    <h6> Informacion Covid-19 </h6>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid.sintomas"> ¿Ha presentado sintomas? </label>
+        <select  id="estudiante.estadoCovid.sintomas" value="estudiante.estadoCovid.sintomas" asp-for="estudiante.estadoCovid.sintomas">
+            <option value="true">Positivo</option>
+            <option value="false">Negativo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid.tipoSintomas"> ¿Cuales Sintomas? </label>
+        <select  id="estudiante.estadoCovid.tipoSintomas" value="estudiante.estadoCovid.tipoSintomas" asp-for="estudiante.estadoCovid.tipoSintomas">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Fiebre">Fiebre</option>
+            <option value="Tos">Tos</option>
+            <option value="Cansancio">Cansancio</option>
+            <option value="Pérdida_gusto_olfato">Perdida del gusto u olfato</option>
+            <option value="Dolor_garganta">Dolor de garganta</option>
+            <option value="Dolor_cabeza">Dolor de cabeza</option>
+            <option value="Diarrea">Diarrea</option>
+            <option value="Dificultad_respirartoria">Dificultad respirartoria</option>
+            <option value="Dolor_pecho_espalda">Dolor en pecho o espalda</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid.estadoCovid"> Estado Covid </label>
+        <select  id="estudiante.estadoCovid.estadoCovid" value="estudiante.estadoCovid.estadoCovid" asp-for="estudiante.estadoCovid.estadoCovid">
+            <option value="true">Positivo</option>
+            <option value="false">Negativo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid.fechaDiagnostico"> Fecha prueba o diagnostico </label>
+        <input asp-for="estudiante.estadoCovid.fechaDiagnostico" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="estudiante.estadoCovid.periodoAislamiento"> Periodo de aislamiento </label>
+        <input asp-for="estudiante.estadoCovid.periodoAislamiento" class="form-control">
     </div>
     <div class="form-group">
         <button type="submit" class="btn btn-primary" >Guardar Cambios</button> 
