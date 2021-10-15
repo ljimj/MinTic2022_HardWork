@@ -53,13 +53,31 @@
     <h6> Informacion Covid-19 </h6>
     <div class="form-group">
         <label asp-for="profesor.estadoCovid.sintomas"> ¿Ha presentado sintomas? </label>
-        <input asp-for="profesor.estadoCovid.sintomas" class="form-control">
+        <select  id="profesor.estadoCovid.sintomas" value="profesor.estadoCovid.sintomas" asp-for="profesor.estadoCovid.sintomas">
+            <option value="true">Positivo</option>
+            <option value="false">Negativo</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="profesor.estadoCovid.tipoSintomas"> ¿Cuales Sintomas? </label>
+        <select  id="profesor.estadoCovid.tipoSintomas" value="profesor.estadoCovid.tipoSintomas" asp-for="profesor.estadoCovid.tipoSintomas">
+            <option value="Ninguno">Ninguno</option>
+            <option value="Fiebre">Fiebre</option>
+            <option value="Tos">Tos</option>
+            <option value="Cansancio">Cansancio</option>
+            <option value="Pérdida_gusto_olfato">Perdida del gusto u olfato</option>
+            <option value="Dolor_garganta">Dolor de garganta</option>
+            <option value="Dolor_cabeza">Dolor de cabeza</option>
+            <option value="Diarrea">Diarrea</option>
+            <option value="Dificultad_respirartoria">Dificultad respirartoria</option>
+            <option value="Dolor_pecho_espalda">Dolor en pecho o espalda</option>
+        </select>
     </div>
     <div class="form-group">
         <label asp-for="profesor.estadoCovid.estadoCovid"> Estado Covid </label>
         <select  id="profesor.estadoCovid.estadoCovid" value="profesor.estadoCovid.estadoCovid" asp-for="profesor.estadoCovid.estadoCovid">
-            <option value="positivo">Positivo</option>
-            <option value="negativo">Negativo</option>
+            <option value="true">Positivo</option>
+            <option value="false">Negativo</option>
         </select>
     </div>
     <div class="form-group">

@@ -44,11 +44,11 @@ namespace Salones.App.Persistencia
                 profesorEncontrado.departamento=profesor.departamento;
                 profesorEncontrado.materia=profesor.materia;
                 profesorEncontrado.facultad = profesor.facultad;
-                profesorEncontrado.estadoCovid.sintomas=profesor.estadoCovid.sintomas;
-                profesorEncontrado.estadoCovid.tipoSintomas=profesor.estadoCovid.tipoSintomas;
-                profesorEncontrado.estadoCovid.estadoCovid=profesor.estadoCovid.estadoCovid;
-                profesorEncontrado.estadoCovid.fechaDiagnostico=profesor.estadoCovid.fechaDiagnostico;
-                profesorEncontrado.estadoCovid.periodoAislamiento=profesor.estadoCovid.periodoAislamiento;
+                //profesorEncontrado.estadoCovid.sintomas=profesor.estadoCovid.sintomas;
+                //profesorEncontrado.estadoCovid.tipoSintomas=profesor.estadoCovid.tipoSintomas;
+                profesorEncontrado.estadoCovid=profesor.estadoCovid;
+                //profesorEncontrado.estadoCovid.fechaDiagnostico=profesor.estadoCovid.fechaDiagnostico;
+                //profesorEncontrado.estadoCovid.periodoAislamiento=profesor.estadoCovid.periodoAislamiento;
                 
                 _appContext.SaveChanges();
             }

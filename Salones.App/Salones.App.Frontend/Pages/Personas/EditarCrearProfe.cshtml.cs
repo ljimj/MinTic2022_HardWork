@@ -40,11 +40,15 @@ namespace Salones.App.Frontend.Pages
         {
             if(!ModelState.IsValid)
             {
-                return Page();                
+                Console.WriteLine("ups Error");
+                return Page();
+                                
             }else{
                 if(profesor.id>0)
                 {
                     profesor = _repoProfesor.UpdateProfesor(profesor);
+                    Console.WriteLine("Se actualizo un Profesor en la base de datos");
+
                 }else{
                     _repoProfesor.AddProfesor(profesor);
                 }     
