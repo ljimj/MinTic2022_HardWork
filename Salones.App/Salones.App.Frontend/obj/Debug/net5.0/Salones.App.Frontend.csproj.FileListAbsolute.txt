@@ -187,3 +187,9 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Salones
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\DetallesSede.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EditarCrearSede.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EliminarSede.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\DetallesSalon.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EditarCrearSalon.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EliminarSalon.cshtml.g.cs

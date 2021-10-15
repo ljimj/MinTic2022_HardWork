@@ -1,5 +1,39 @@
-@page
-@model IndexModel
+﻿@page
+@model Salones.App.Frontend.Pages.ListSedeModel
 @{
-    ViewData["Title"] = "Inicio";
 }
+<h1>SEDES DE LA UNIVERSIDAD</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Sede</th>
+            <th scope="col">Cantidad de Salones</th>
+        </tr>
+    </thead>
+    @foreach (var sede in Model.sedes)
+    {
+        <tbody>
+            <tr>
+                <td> @sede.id </td>
+                <td> @sede.cantidadSalones </td>
+                <td>
+                    <a class="btn btn-primary table-tbn" asp-page="./DetallesSede" asp-route-sedeId="@sede.id">
+                        <i class="fas fa-info-circle"></i>
+                        Detalles
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-secondary table-btn" asp-page="./EditarCrearSede" asp-route-sedeId="@sede.id">
+                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./EliminarSede" asp-route-sedeId="@sede.id">
+                        <i class="fas fa-book-dead fa-lg"></i>Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
+
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearSede">Adicionar Sede</a>

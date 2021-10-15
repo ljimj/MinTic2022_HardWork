@@ -1,5 +1,39 @@
-@page
-@model IndexModel
+﻿@page
+@model Salones.App.Frontend.Pages.ListSalonModel
 @{
-    ViewData["Title"] = "Inicio";
 }
+<h1>SALONES EN LA UNIVERSIDAD</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Salon</th>
+            <th scope="col">Disponibilidad</th>
+        </tr>
+    </thead>
+    @foreach (var salon in Model.salones)
+    {
+        <tbody>
+            <tr>
+                <td> @salon.nombreSalon </td>
+                <td> @salon.disponibilidad </td>
+                <td>
+                    <a class="btn btn-primary table-tbn" asp-page="./DetallesSalon" asp-route-salonId="@salon.id">
+                        <i class="fas fa-info-circle"></i>
+                        Detalles
+                    </a>
+                </td>
+                <td>
+                    <a class="btn btn-secondary table-btn" asp-page="./EditarCrearSalon" asp-route-salonId="@salon.id">
+                        <i class="fas fa-address-book fa-lg" aria-hidden="true"></i> Editar </a>
+                </td>
+                <td>
+                    <a class="btn btn-danger table-btn" asp-page="./EliminarSalon" asp-route-salonId="@salon.id">
+                        <i class="fas fa-book-dead fa-lg"></i>Eliminar</a>
+                </td>
+            </tr>
+        </tbody>
+    }
+</table>
+
+<a class="btn btn-primary table-tbn" asp-page="./EditarCrearSalon">Adicionar Salon</a>
