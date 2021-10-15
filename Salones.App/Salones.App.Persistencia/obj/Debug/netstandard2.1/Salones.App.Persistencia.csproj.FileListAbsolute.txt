@@ -26,11 +26,9 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandar
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.pdb
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\bin\Debug\netstandard2.1\Salones.App.Dominio.pdb
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csprojAssemblyReference.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfoInputs.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.AssemblyInfo.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CoreCompileInputs.cache
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.CopyComplete
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb
 C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\bin\Debug\netstandard2.1\Salones.App.Persistencia.deps.json
@@ -47,3 +45,5 @@ C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\n
 C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.pdb
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.AssemblyReference.cache
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
+C:\MinTic2022_HardWork\Salones.App\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.csproj.AssemblyReference.cache
+C:\MinTic2022_HardWork\Salones.App\salones.app.persistencia\obj\Debug\netstandard2.1\Salones.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig

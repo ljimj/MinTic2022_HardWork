@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj": {}
+    "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj": {
+    "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
+        "projectUniqueName": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj",
         "projectName": "Salones.App.Dominio",
-        "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\AUX ING\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\obj\\",
+        "projectPath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\MARCO\\.nuget\\packages\\",
+        "outputPath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\AUX ING\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\MARCO\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.0"
@@ -55,7 +55,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

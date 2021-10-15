@@ -27,7 +27,6 @@ C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Do
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.deps.json
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\bin\Debug\netstandard2.0\Salones.App.Dominio.pdb
-C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csprojAssemblyReference.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfoInputs.cache
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.AssemblyInfo.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.CoreCompileInputs.cache
@@ -44,3 +43,5 @@ C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netsta
 C:\HardWork\MinTic2022_HardWork\salones.app\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.pdb
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\Salones.App.Dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\AUX ING\Documents\GitHub\MinTic2022_HardWork\Salones.App\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.AssemblyReference.cache
+C:\MinTic2022_HardWork\Salones.App\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.csproj.AssemblyReference.cache
+C:\MinTic2022_HardWork\Salones.App\salones.app.dominio\obj\Debug\netstandard2.0\Salones.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig

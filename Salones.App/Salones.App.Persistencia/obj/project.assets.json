@@ -7249,8 +7249,8 @@
     },
     "Salones.App.Dominio/1.0.0": {
       "type": "project",
-      "path": "../Salones.App.Dominio/Salones.App.Dominio.csproj",
-      "msbuildProject": "../Salones.App.Dominio/Salones.App.Dominio.csproj"
+      "path": "../salones.app.dominio/Salones.App.Dominio.csproj",
+      "msbuildProject": "../salones.app.dominio/Salones.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7263,19 +7263,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AUX ING\\.nuget\\packages\\": {}
+    "C:\\Users\\MARCO\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.persistencia\\Salones.App.Persistencia.csproj",
       "projectName": "Salones.App.Persistencia",
-      "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\Salones.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\AUX ING\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Persistencia\\obj\\",
+      "projectPath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.persistencia\\Salones.App.Persistencia.csproj",
+      "packagesPath": "C:\\Users\\MARCO\\.nuget\\packages\\",
+      "outputPath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\AUX ING\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\MARCO\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7287,8 +7287,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\AUX ING\\Documents\\GitHub\\MinTic2022_HardWork\\Salones.App\\Salones.App.Dominio\\Salones.App.Dominio.csproj"
+            "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj": {
+              "projectPath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj"
             }
           }
         }
@@ -7339,7 +7339,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }
