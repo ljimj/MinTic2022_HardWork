@@ -184,7 +184,6 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Salones
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\ref\Salones.App.Frontend.dll
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Salones.App.Frontend.pdb
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Salones.App.Frontend.genruntimeconfig.cache
-C:\MinTic2022_HardWork\salones.app\salones.app.frontend\bin\Debug\net5.0\appsettings.json
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\MinTic2022_HardWork\salones.app\salones.app.frontend\obj\Debug\net5.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs

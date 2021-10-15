@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = Salones.App.Frontend
-build_property.ProjectDir = C:\MinTic2022_HardWork\salones.app\salones.app.frontend\
+build_property.ProjectDir = C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\

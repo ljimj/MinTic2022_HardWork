@@ -180,7 +180,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\MARCO\\.nuget\\packages\\": {}
+    "C:\\Users\\LEO_J\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -188,11 +188,11 @@
       "projectUniqueName": "C:\\MinTic2022_HardWork\\Salones.App\\salones.app.dominio\\Salones.App.Dominio.csproj",
       "projectName": "Salones.App.Dominio",
       "projectPath": "C:\\MinTic2022_HardWork\\Salones.App\\salones.app.dominio\\Salones.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\MARCO\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\LEO_J\\.nuget\\packages\\",
       "outputPath": "C:\\MinTic2022_HardWork\\Salones.App\\salones.app.dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\MARCO\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\LEO_J\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

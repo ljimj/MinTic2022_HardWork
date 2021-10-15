@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "yPiat04RNOIo6r8T0LU48GYnMBZLc+a6MiFnhaU8fI6zQOy4v1TLQPZio+ANQiqXRgwT7ejhruJqPZJXozdG/w==",
+  "dgSpecHash": "k6KiGsN3Tq3pE28QQlJkqNIOuTHkrWmJwg0nCIgaiccHMeOj4+xDDfoRizK4ql49oMFcFsVfOdBrPdC8pJIlkQ==",
   "success": true,
-  "projectFilePath": "C:\\MinTic2022_HardWork\\salones.app\\salones.app.dominio\\Salones.App.Dominio.csproj",
+  "projectFilePath": "C:\\MinTic2022_HardWork\\Salones.App\\salones.app.dominio\\Salones.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\MARCO\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\MARCO\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\LEO_J\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\LEO_J\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

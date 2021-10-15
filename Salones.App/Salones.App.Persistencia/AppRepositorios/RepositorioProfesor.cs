@@ -32,7 +32,7 @@ namespace Salones.App.Persistencia
 
         Profesor IRepositorioProfesor.UpdateProfesor(Profesor profesor)
         {
-             var profesorEncontrado = _appContext.Profesores.FirstOrDefault(p => p.id == profesor.id);
+             var profesorEncontrado = _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p => p.id == profesor.id);
 
              if (profesorEncontrado != null)
             {
@@ -41,11 +41,15 @@ namespace Salones.App.Persistencia
                 profesorEncontrado.tipoIdentificacion = profesor.tipoIdentificacion;
                 profesorEncontrado.identificacion = profesor.identificacion;
                 profesorEncontrado.edad = profesor.edad;
-                profesorEncontrado.estadoCovid =profesor.estadoCovid;
                 profesorEncontrado.departamento=profesor.departamento;
                 profesorEncontrado.materia=profesor.materia;
                 profesorEncontrado.facultad = profesor.facultad;
-
+                profesorEncontrado.estadoCovid.sintomas=profesor.estadoCovid.sintomas;
+                profesorEncontrado.estadoCovid.tipoSintomas=profesor.estadoCovid.tipoSintomas;
+                profesorEncontrado.estadoCovid.estadoCovid=profesor.estadoCovid.estadoCovid;
+                profesorEncontrado.estadoCovid.fechaDiagnostico=profesor.estadoCovid.fechaDiagnostico;
+                profesorEncontrado.estadoCovid.periodoAislamiento=profesor.estadoCovid.periodoAislamiento;
+                
                 _appContext.SaveChanges();
             }
 
@@ -69,13 +73,13 @@ namespace Salones.App.Persistencia
 
         Profesor IRepositorioProfesor.GetProfesor(int idProfesor)
         {
-            var ProfesorEncontrado=_appContext.Profesores.FirstOrDefault(p => p.id == idProfesor);
-            return ProfesorEncontrado;
+            var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
+            return profesorEncontrado;
         }
 
         IEnumerable<Profesor> IRepositorioProfesor.GetAllProfesores()
         {
-            return _appContext.Profesores;
+            return _appContext.Profesores.Include(p => p.estadoCovid);
         }
 
         Profesor IRepositorioProfesor.GetProfesorCovid(int idProfesor)
