@@ -14,14 +14,14 @@
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
             <th scope="col">Edad</th>
-            <th scope="col">Estado COVID</th>
             <th scope="col">Unidad</th>
             <th scope="col">Sintomas</th>
+            <th scope="col">Tipo de Sintomas</th>
             <th scope="col">Estado Covid</th>
             <th scope="col">Fecha Diagnostico</th>
             <th scope="col">Periodo Aislamiento </th>
         </tr>
-     </thead>
+    </thead>
     <tbody>
         <tr>
             <td> @Model.directivo.nombres </td>
@@ -29,14 +29,14 @@
             <td> @Model.directivo.tipoIdentificacion </td>
             <td> @Model.directivo.identificacion </td>
             <td> @Model.directivo.edad </td>
-            <td> @Model.directivo.estadoCovid </td>
             <td> @Model.directivo.unidad </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            <td> </td>
-            
+            <td> @Model.directivo.estadoCovid.sintomas</td>
+            <td> @Model.directivo.estadoCovid.tipoSintomas</td>
+            <td> @Model.directivo.estadoCovid.estadoCovid</td>
+            <td> @Model.directivo.estadoCovid.fechaDiagnostico</td>
+            <td> @Model.directivo.estadoCovid.periodoAislamiento</td>
+
         </tr>
-       </tbody>
+    </tbody>
 </table>
 <a class="nav-link" asp-area="" asp-page="/Personas/ListDirect">Volver</a>

@@ -13,7 +13,6 @@
             <th scope="col">Tipo identificacion</th>
             <th scope="col">Numero de documento</th>
             <th scope="col">Edad</th>
-            <th scope="col">Estado COVID</th>
             <th scope="col">Cerrera</th>
             <th scope="col">Semestre</th>
             <th scope="col">Facultad</th>
@@ -23,7 +22,7 @@
             <th scope="col">Fecha Diagnostico</th>
             <th scope="col">Periodo Aislamiento </th>
         </tr>
-     </thead>
+    </thead>
     <tbody>
         <tr>
             <td> @Model.estudiante.nombres </td>
@@ -31,7 +30,6 @@
             <td> @Model.estudiante.tipoIdentificacion </td>
             <td> @Model.estudiante.identificacion </td>
             <td> @Model.estudiante.edad </td>
-            <td> @Model.estudiante.estadoCovid </td>
             <td> @Model.estudiante.carrera </td>
             <td> @Model.estudiante.semestre </td>
             <td> @Model.estudiante.facultad </td>
@@ -41,6 +39,6 @@
             <td> @Model.estudiante.estadoCovid.fechaDiagnostico</td>
             <td> @Model.estudiante.estadoCovid.periodoAislamiento</td>
         </tr>
-       </tbody>
+    </tbody>
 </table>
 <a class="nav-link" asp-area="" asp-page="/Personas/ListEstud">Volver</a>
