@@ -2,3 +2,32 @@
 @model Salones.App.Frontend.Pages.EliminarSalonModel
 @{
 }
+<h1>Detalles Salon</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Salon</th>
+            <th scope="col">Capacidad</th>
+            <th scope="col">Disponibilidad</th>
+            
+            
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <td> @Model.salon.nombreSalon </td>
+            <td> @Model.salon.capacidad </td>
+            <td> @Model.salon.disponibilidad </td>
+            
+            
+        </tr>
+       </tbody>
+</table>
+<form method="post">
+    <input type="hidden" asp-for="salon.id">
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Confirmar Eliminar</button>
+        <a class="nav-link" asp-area="" asp-page="/Universidad/ListSalon">Volver</a>
+    </div>
+</form>

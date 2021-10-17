@@ -2,3 +2,25 @@
 @model Salones.App.Frontend.Pages.EditarCrearSalonModel
 @{
 }
+<h1>Salon</h1>
+<form method="post">
+    <input type="hidden" asp-for="salon.id">
+    <div class="form-group">
+        <label asp-for="salon.nombreSalon"> Salon </label>
+        <input asp-for="salon.nombreSalon" class="form-control">
+        <span class="text_danger" asp-validation.for="salon.nombreSalon"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="salon.capacidad"> Capacidad </label>
+        <input asp-for="salon.capacidad" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="salon.disponibilidad"> Disponibilidad </label>
+        <input asp-for="salon.disponibilidad" class="form-control">
+    </div>
+    
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button> 
+        <a class="btn btn-primary table-tbn" asp-page="/Universidad/ListSalon"> Volver </a>
+    </div>
+</form><br>

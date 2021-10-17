@@ -2,3 +2,26 @@
 @model Salones.App.Frontend.Pages.DetallesSalonModel
 @{
 }
+<h1>Detalles Salon</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Salon</th>
+            <th scope="col">Capacidad</th>
+            <th scope="col">Disponibilidad</th>
+            
+            
+        </tr>
+     </thead>
+    <tbody>
+        <tr>
+            <td> @Model.salon.nombreSalon </td>
+            <td> @Model.salon.capacidad </td>
+            <td> @Model.salon.disponibilidad </td>
+            
+            
+        </tr>
+       </tbody>
+</table>
+<a class="nav-link" asp-area="" asp-page="/Universidad/ListSalon">Volver</a>
