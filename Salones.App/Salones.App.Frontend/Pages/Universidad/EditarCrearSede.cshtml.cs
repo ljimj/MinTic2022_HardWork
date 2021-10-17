@@ -22,7 +22,6 @@ namespace Salones.App.Frontend.Pages
         private static IRepositorioProfesor _repoProfesor = new RepositorioProfesor(new Persistencia.AppContext());
         private static IRepositorioPersonalAseo _repoPersonalAseo = new RepositorioPersonalAseo(new Persistencia.AppContext());
         [BindProperty]
-
         public Sede sede{get;set;}
         //public IEnumerable<Salon> salones{get;set;}
         //public IEnumerable<Profesor> profesores{get;set;}
@@ -49,7 +48,7 @@ namespace Salones.App.Frontend.Pages
                 
             }else
             {
-                sede = new Sede();
+                sede = new Sede();   //Nueva sede
             }
             
             if(sede == null)

@@ -8,7 +8,7 @@
     <div class="form-group">
         @if (Model.sede.id != 0)
         {
-            <label asp-for="sede.id"> Sede</label>
+            <label asp-for="sede.id">Crear / Editar Sede</label>
             <input asp-for="sede.id" class="form-control">
             <span class="text_danger" asp-validation.for="sede.id"></span>
         }
@@ -21,25 +21,32 @@
         Cantidad de salones
         @if (Model.sede.salones != null)
         {
-            <select asp-for="sede.salones" multiple>
-                @foreach (var salon in Model.sede.salones)
+            <table>
+                @foreach (var persona in Model.sede.personasAutorizadas)
                 {
-                    <option value=@salon.nombreSalon> @salon.nombreSalon </option>
+                    <td> @persona.nombres @persona.apellidos Editar  </td>
                 }
-            </select>
+            </table>
+ 
         }
+
+        Aca boton agregar salones ¿?
     </div>
     <div class="form-group">
         Personas Autorizadas
         @if (Model.sede.personasAutorizadas != null)
         {
-            <select asp-for="sede.personasAutorizadas" multiple>
+                <table>
                 @foreach (var persona in Model.sede.personasAutorizadas)
                 {
-                    <option value=@persona.id> @persona.nombres @persona.apellidos </option>
+                    <td> @persona.nombres @persona.apellidos Editar  </td>
                 }
-            </select>
+                </table>
+            
+            
         }
+
+        Aca boton agregar personas ¿?
     </div>
     <div class="form-group">
 
