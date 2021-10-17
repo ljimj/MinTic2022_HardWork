@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Salones.App.Frontend.Pages
 {   
-    [Authorize]
+    
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;

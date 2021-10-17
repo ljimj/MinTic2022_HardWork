@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace Salones.App.Frontend.Pages
 {   
-    [Authorize]
+    
     public class ListasModel : PageModel
     {
         public void OnGet()
