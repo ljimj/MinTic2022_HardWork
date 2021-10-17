@@ -2,3 +2,50 @@
 @model Salones.App.Frontend.Pages.EditarCrearSedeModel
 @{
 }
+<h1>SEDE UNIVERSIDAD</h1>
+<form method="post">
+    <input type="hidden" asp-for="sede.id">
+    <div class="form-group">
+        @if (Model.sede.id != 0)
+        {
+            <label asp-for="sede.id"> Sede</label>
+            <input asp-for="sede.id" class="form-control">
+            <span class="text_danger" asp-validation.for="sede.id"></span>
+        }
+    </div>
+    <div class="form-group">
+        <label asp-for="sede.cantidadSalones"> Cantidad de salones </label>
+        <input asp-for="sede.cantidadSalones" class="form-control">
+    </div>
+    <div class="form-group">
+        Cantidad de salones
+        @if (Model.sede.salones != null)
+        {
+            <select asp-for="sede.salones" multiple>
+                @foreach (var salon in Model.sede.salones)
+                {
+                    <option value=@salon.nombreSalon> @salon.nombreSalon </option>
+                }
+            </select>
+        }
+    </div>
+    <div class="form-group">
+        Personas Autorizadas
+        @if (Model.sede.personasAutorizadas != null)
+        {
+            <select asp-for="sede.personasAutorizadas" multiple>
+                @foreach (var persona in Model.sede.personasAutorizadas)
+                {
+                    <option value=@persona.id> @persona.nombres @persona.apellidos </option>
+                }
+            </select>
+        }
+    </div>
+    <div class="form-group">
+
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a class="btn btn-primary table-tbn" asp-page="/Universidad/ListSede"> Volver </a>
+    </div>
+</form><br>

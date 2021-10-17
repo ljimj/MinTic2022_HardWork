@@ -421,6 +421,7 @@ namespace Salones.App.Consola
                 }
                 _repoSede.UpdateSede(sede);
             }
+            
         }
 
         private static void buscarSedesConSalonesDisponibles(bool disponibilidad)
