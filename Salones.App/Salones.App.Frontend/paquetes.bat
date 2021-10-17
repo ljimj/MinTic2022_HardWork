@@ -5,8 +5,8 @@ echo.
 echo Este programa instala automaticamente los paquetes necesarios.
 echo Solo debería ejecutarse una vez.
 echo.
-echo No funciona bien en la consola Powershell del VSCode, debería 
-echo ejecutarse desde la consola de windows.
+echo Para ejecutar en la consola Powershell del VSCode use: 
+echo .\paquetes.bat
 echo
 echo on
 
