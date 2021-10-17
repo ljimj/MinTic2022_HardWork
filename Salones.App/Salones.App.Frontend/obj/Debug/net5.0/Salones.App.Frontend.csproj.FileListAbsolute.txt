@@ -193,3 +193,9 @@ C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\P
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\DetallesSalon.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EditarCrearSalon.cshtml.g.cs
 C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Pages\Universidad\EliminarSalon.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\bin\Debug\net5.0\appsettings.json
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Login.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Logout.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Register.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\MinTic2022_HardWork\Salones.App\Salones.App.Frontend\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
