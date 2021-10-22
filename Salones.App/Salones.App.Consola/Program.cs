@@ -22,49 +22,47 @@ namespace Salones.App.Consola
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            //AddDirectivo();  //Por si se desea ejecutar
-            //AddProfesor();
-            //AddEstudiante();
-            //AddSalon();
-            //AddPersonalAseo();
-            //AddSede();
+            AddDirectivo();  //Por si se desea ejecutar
+            AddProfesor();
+            AddEstudiante();
+            AddSalon();
+            AddPersonalAseo();
+            AddSede();
+
+            Profesor profe1 = BuscarProfesorCovid(1);
+            Profesor profe2 = BuscarProfesorCovid(2);
+
+            Salon salon1 = BuscarSalon(1);
+            Salon salon2 = BuscarSalon(3);
+
+            BuscarDirectivo(8); //Por si se desea ejecutar
+            BuscarProfesor(9); //Por si se desea ejecutar
+            BuscarEstudiante(10); //Por si se desea ejecutar
+            
+            PersonalAseo personalA1 = BuscarPersonalAseo(1061); 
 
             
-            
-            //Profesor profe1 = BuscarProfesorCovid(1064);
-            //Profesor profe2 = BuscarProfesorCovid(36);
+            AddPersonaSalonaSede(1, personalA1, salon1);
+            AddPersonaSalonaSede(5, profe2, salon2);
 
-            //Salon salon1 = BuscarSalon(1);
-            //Salon salon2 = BuscarSalon(3);
-
-            //BuscarDirectivo(8); //Por si se desea ejecutar
-            //BuscarProfesor(9); //Por si se desea ejecutar
-            //BuscarEstudiante(10); //Por si se desea ejecutar
-        
-            //PersonalAseo personalA1 = BuscarPersonalAseo(1061); 
-
-            
-            //AddPersonaSalonaSede(1, personalA1, salon1);
-            //AddPersonaSalonaSede(5, profe2, salon2);
-
-            //ActualizarDirectivo(); //Por si se desea ejecutar
-            //ActualizarProfesor();
-            //ActualizarEstudiante();
+            ActualizarDirectivo(); //Por si se desea ejecutar
+            ActualizarProfesor();
+            ActualizarEstudiante();
             //ActualizarPersonalAseo(1027);
             
-            //EliminarDirectivo(5); //Por si se desea ejecutar
-            //EliminarProfesor(6);
-            //EliminarEstudiante(7);
-            //EliminarPersonalAseo(1023);
+            EliminarDirectivo(5); //Por si se desea ejecutar
+            EliminarProfesor(6);
+            EliminarEstudiante(7);
+            EliminarPersonalAseo(1023);
             
             
-            //BuscarDirectivos(); //Por si se desea ejecutar
-            //BuscarProfesores();
-            //BuscarEstudiantes();
-            //BuscarPersonasAseo();
-            //BuscarPersonalAseo(24);
+            BuscarDirectivos(); //Por si se desea ejecutar
+            BuscarProfesores();
+            BuscarEstudiantes();
+            BuscarPersonasAseo();
+            BuscarPersonalAseo(24);
 
-            //buscarSedesConSalonesDisponibles(true);
+            buscarSedesConSalonesDisponibles(true);
             buscarSedesConPersonasMayores();
             buscarSedesConPersonasCovid();
 
@@ -142,7 +140,18 @@ namespace Salones.App.Consola
         private static Profesor BuscarProfesorCovid(int idProfesor)
         {
             var profesor = _repoProfesor.GetProfesorCovid(idProfesor);
-            Console.WriteLine(profesor.nombres+" "+profesor.apellidos+" \n-Estado Covid: "+ profesor.estadoCovid.estadoCovid);        
+            
+            if (profesor !=null){
+                Console.WriteLine(profesor.nombres + " " + profesor.apellidos);
+                Console.Write("Estado Covid: ");
+                if(profesor.estadoCovid.estadoCovid){
+                    Console.WriteLine("Positivo");
+                } else {
+                    Console.WriteLine("Negativo");
+                }
+            }else{
+                Console.WriteLine("Profesor no encontrado");
+            }
             return profesor; 
         }
 
@@ -190,7 +199,7 @@ namespace Salones.App.Consola
                 identificacion = "1000789654",
                 edad = 17,
                 estadoCovid = null,
-                carrera = "Licencitura en Artes",
+                carrera = "Licenciatura en Artes",
                 semestre = "3",
                 facultad = Facultad.Educacion
             };

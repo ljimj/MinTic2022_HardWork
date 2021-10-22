@@ -73,8 +73,18 @@ namespace Salones.App.Persistencia
 
         Profesor IRepositorioProfesor.GetProfesor(int idProfesor)
         {
-            var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
-            return profesorEncontrado;
+            try
+            {
+                var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
+                return profesorEncontrado;
+            }
+            catch (System.InvalidCastException)
+            {
+                Console.Write("Error en Irrepositorio Getprofesor"); 
+                /*  Tal vez no tiene estado covid.  ¿Crear uno?  */
+                return null ;
+            }
+            
         }
 
         IEnumerable<Profesor> IRepositorioProfesor.GetAllProfesores()
@@ -84,11 +94,26 @@ namespace Salones.App.Persistencia
 
         Profesor IRepositorioProfesor.GetProfesorCovid(int idProfesor)
         {
-            var profesorEncontrado= _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
-            return profesorEncontrado;
+            Profesor profesorEncontrado = new Profesor();
+            try{
+                profesorEncontrado = _appContext.Profesores.Include(p => p.estadoCovid).FirstOrDefault(p=>p.id==idProfesor);
+            
+            } catch (System.InvalidCastException e1)
+            {
+                Console.WriteLine("Error " + e1);
+                
+                if (profesorEncontrado.estadoCovid == null){ 
+                    Console.Write("No se encontró estado COVID");
+                }
+                
+
+
+                
+                
+                return null;
+            }
+            return profesorEncontrado;   
         }
-       
-
+        
     }
-
 }

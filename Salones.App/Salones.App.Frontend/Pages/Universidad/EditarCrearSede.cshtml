@@ -22,11 +22,12 @@
         @if (Model.sede.salones != null)
         {
             <table>
-                @foreach (var persona in Model.sede.personasAutorizadas)
+                @foreach (var salones in Model.sede.salones)
                 {
-                    <td> @persona.nombres @persona.apellidos Editar  </td>
+                    <td> @salones.nombreSalon  BotonEditarNombre  </td>
                 }
             </table>
+            
  
         }
 
